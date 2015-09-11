@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title></title>
+	<meta name="description" content="Magento 2 UX Prototype
+">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/app.css" />
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/custom-bootstrap.css" />
+	
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery-ui.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/app.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/bootstrap.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/custom-bootstrap.js"></script>
+
+</head>	
+<body>
+<div class="app-main-wrap">
+
+<div class="admin-page">
+	
+	<nav class="admin-nav">
+	<div class="admin-nav-main">
+	<a href="http://belbiy.github.io/ux-prototypedeploy-tool/" class="logo"><i class="icon-mage-logo"></i></a>		
+	<ul class="nav">
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/deploy-tool/" class=""><i class="icon-home"></i> Home</a></li>
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/deploy-tool/dp_extensionMgmnt/" class=""><i class="icon-plug-in"></i> Component Manager</a></li>
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/deploy-tool/dp_upgrade/" class=""><i class="icon-upgrade"></i> &nbsp;&nbsp;System&nbsp;&nbsp; Upgrade</a></li>
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/deploy-tool/dp_settings/" class=""><i class="icon-settings" ></i> System  &nbsp;&nbsp;&nbsp;Config&nbsp;&nbsp;&nbsp;</a></li>
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/deploy-tool/dp_tools/" class=""><i class="icon-tools"></i> Tools</a></li>
+		</ul>
+	</div><!-- /.admin-nav-main -->
+	<div class="admin-nav-bg"></div>
+	
+
+</nav>
+
+
+	<div class="main-content">
+		
+			
+		<div class="row">
+	<div class="col-md-12">
+
+	<!--global  message-->
+		<div class="global-warning-message"> 
+
+				<p id="component-update-checking" ><img src="../img/yellow-loader.gif">&nbsp;&nbsp;&nbsp;Checking for updates</p>
+
+				<p id="you-have-updates" ><i class="icon-alert orange icon-status"></i>&nbsp;&nbsp;&nbsp;You have <a href="#"> 3 updates</a>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-refresh refresh-button" aria-hidden="true"></span></p>
+
+		</div><!--global message-->
+
+	<h1>Component Manager</h1>
+
+
+	<div id="button-bar" class= "button-bar">
+    	
+    	 <button class="btn btn-secondary btn-lg">Queue (0)</button>
+
+		 <button onclick="location.href='GetComponent.html'" class="btn btn-primary btn-lg">Add New Component</button>
+		
+	</div><!--button bar -->
+	<br>
+	<br>
+ 
+<div class="row data-grid-controls controls-first">
+	<div class="col-sm-6">
+		
+		<span class="control-group control-search">
+			<div class="input-group">
+				<input type="search" class="form-control search-input" placeholder="Search by keyword" />
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-search"><i class="icon-search"></i></button>
+				</span>
+			</div>
+		</span>
+		
+
+	</div>
+	
+	
+	<div class="col-sm-6">
+		
+		<span class="control-group control-filter">
+			<button class="btn" data-toggle="collapse" data-target="#data-grid-filters" aria-expanded="false" ><i class="glyphicon glyphicon-filter"></i> Filters</button>
+		</span>
+		
+		
+		<span class="control-group control-view">
+			<span class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-view"></i> Default View <span class="caret"></span></button>
+				<ul class="dropdown-menu " role="menu">
+					
+					<li><a href="#">Cameras</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+					<li><a href="#">Products by weight</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+					<li><a href="#">Greg's view</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+					<li class="divider"></li>
+					<li><a href="#">Save Current View</a></li>
+				</ul>
+			</span>
+		</span>
+		
+		
+		<span class="control-group control-settings">
+			<span class="btn-group control-settings-dropdown">
+				<button type="button" class="btn btn-default dropdown-toggle"  aria-expanded="false"><i class="glyphicon glyphicon-cog"></i> Columns <span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-right " role="menu">
+					
+					<div class="row">
+						
+						<div class="col-md-4">
+							<div class="settings-columns">
+				
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<label><input type="checkbox" /> Custom Column</label>
+							<label><input type="checkbox" /> Another</label>
+							<label><input type="checkbox" /> Column Heading</label>	
+						</div>
+						
+						<div class="col-md-4">
+							<label><input type="checkbox" /> Custom Column</label>
+							<label><input type="checkbox" /> Another</label>
+							<label><input type="checkbox" /> Column Heading</label>	
+						</div>
+						
+					</div>
+					
+					
+					<div class="row dropdown-buttons">
+						<div class="col-sm-6">
+							<a href="#" class="btn btn-link btn-small btn-reset">Reset</a>
+						</div>
+						<div class="col-sm-6 text-right">
+							<a href="#" class="btn btn-link btn-small btn-cancel">Cancel</a> <button class="btn btn-secondary btn-sm btn-apply">Apply</button>
+						</div>
+					</div>
+					
+				</ul>
+			</span>
+		</span>
+	</div>
+	
+</div>
+
+
+
+<div id="data-grid-filters" class="row collapse data-drid-controls controls-filter">
+	<div class="col-md-12">
+	
+		<div class="active-filters">
+			<label>Active filters:</label> 
+			<span class="filter">Assigned Terms <a href="#" class="badge"><i class="glyphicon glyphicon-remove"></i></a></span>
+		</div>
+	
+	<div class="row">
+		
+		<div class="col-md-8">
+		<div class="quick-filters">
+			<label>Quick filters:</label> 
+			<label><input type="checkbox" class="checkbox-mage" /> Assigned Terms </label>
+			
+		</div>
+		</div>
+		
+		<div class="col-md-4 text-right">
+			
+			<a href="#">More Filters <i class="caret"></i></a>
+		
+		</div>
+		
+	</div>
+	
+	<div class="filters-form">
+		<form>
+			<div class="row">
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-id" class="control-label">ID</label>
+						<input type="number" id="filter-id" maxlength="5" />
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-sku" class="control-label">SKU</label>
+						<input type="text" id="filter-sku"  />
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-tree" class="control-label">Filter tree</label>
+						<select class="select-mage" id="filter-tree">
+							<option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="col-sm-3	">
+					<div class="form-group">
+						<label for="filter-sku" class="control-label">SKU</label>
+						<input type="text" id="filter-sku"  />
+					</div>
+				</div>
+				
+			</div>
+				
+				
+			<button class="btn btn-link">Cancel</button> <button class="btn btn-secondary">Apply Filters</button>
+		</form>
+	</div>	
+
+	
+	</div>
+</div>
+
+
+
+<div class="row data-grid-controls controls-second">
+	
+	<div class="col-sm-6">
+		
+		
+
+		<span class="control-group control-items">
+			<br>
+			176 items found
+		</span>
+
+	</div>
+	
+	<div class="col-sm-6  text-right">
+		
+		<span class="control-group control-per-page">
+		
+			<select class="form-control select-mage">
+				<option>10</option>
+				<option>30</option>
+				<option>50</option>
+				<option>100</option>
+				<option>200</option>
+				<option>All</option>
+			</select> per page
+			
+		</span>
+		
+		<span class="control-group control-pages">
+			<button class="btn"><i class="glyphicon glyphicon-chevron-left"></i></button>
+			<input class="form-control page-number" type="text" value="1" /> of 2 
+			<button class="btn"><i class="glyphicon glyphicon-chevron-right"></i></button>
+		</span>
+		
+	</div>
+</div>
+
+<div class="data-grid-controls data-grid-controls-sticky">
+	<div class="data-grid-controls row">
+		
+			
+			<div class="col-sm-4">
+
+				<span class="control-group control-items">
+						176 items found
+						<span class="items-selected"></span>
+				</span>
+		
+			</div>
+			<div class="col-sm-8 text-right">
+				
+				<span class="control-group">
+					<button class="btn btn-default"><i class="icon-search"></i></button>
+				</span>
+				<span class="control-group">
+					<span class="btn-group">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-filter"></i></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Cameras</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+							<li class="divider"></li>
+							<li><a href="#">Save Current View</a></li>
+						</ul>
+					</span>
+				</span>
+				
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-view"></i></button>
+						<ul class="dropdown-menu " role="menu">
+					
+							<li><a href="#">Cameras</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+							<li><a href="#">Products by weight</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+							<li><a href="#">Greg's view</a> <button class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button></li>
+							<li class="divider"></li>
+							<li><a href="#">Save Current View</a></li>
+						</ul>
+					</span>
+				</span>
+				
+				<span class="control-group control-settings">
+					<span class="btn-group control-settings-dropdown">
+						<button type="button" class="btn btn-default dropdown-toggle"  aria-expanded="false"><i class="icon-settings"></i></button>
+						<ul class="dropdown-menu dropdown-menu-right " role="menu">
+							
+							<div class="row">
+								
+								<div class="col-md-4">
+									<div class="settings-columns">
+						
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<label><input type="checkbox" /> Custom Column</label>
+									<label><input type="checkbox" /> Another</label>
+									<label><input type="checkbox" /> Column Heading</label>	
+								</div>
+								
+								<div class="col-md-4">
+									<label><input type="checkbox" /> Custom Column</label>
+									<label><input type="checkbox" /> Another</label>
+									<label><input type="checkbox" /> Column Heading</label>	
+								</div>
+								
+							</div>
+							
+							
+							<div class="row dropdown-buttons">
+								<div class="col-sm-6">
+									<a href="#" class="btn btn-link btn-small btn-reset">Reset</a>
+								</div>
+								<div class="col-sm-6 text-right">
+									<a href="#" class="btn btn-link btn-small btn-cancel">Cancel</a> <button class="btn btn-secondary btn-sm btn-apply">Apply</button>
+								</div>
+							</div>
+							
+						</ul>
+					</span>
+				</span>
+				
+
+				<span class="control-group control-per-page">
+					<select class="form-control select-mage">
+						<option>20</option>
+						<option>30</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>All</option>
+					</select>
+				</span>
+				
+				<span class="control-group control-pages">
+					<button class="btn"><i class="glyphicon glyphicon-chevron-left"></i></button>
+					<button class="btn"><i class="glyphicon glyphicon-chevron-right"></i></button>
+				</span>
+				
+			</div>
+	</div>
+		
+	
+	
+</div>
+
+<br>
+<table class="table data-grid draggable">
+	<thead>
+		<tr>
+			
+			<th class="draggable"></th>
+			<th class="draggable">Name</th>
+			<th class="draggable">Version</th>
+			<th class="draggable">Type</th>
+			<th class="draggable">Author</th>
+			<th class="draggable">Updated</th>
+			<th class="draggable">Action</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target=".rows-multi-expandable-1"><i class="icon-caret-down"></i></a>
+			</td>
+			<td>Modules not attached to package</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr class="rows-multi-expandable-1 row-collapse collapse">
+			<td></td>
+			<td><i class="icon-enable green icon-status"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="On"></i>&nbsp;&nbsp;&nbsp;Module name a
+			</td>
+			<td>
+		</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#">Turn Off</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+
+			</td>
+		</tr>
+		<tr class="rows-multi-expandable-1 row-collapse collapse">
+			<td></td>
+			<td><i class="icon-not-installed icon-grey icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Not Installed"></i>&nbsp;&nbsp;&nbsp;Module name b</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#">Install</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+	
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target="#row-expandable"><i class="icon-caret-down"></i></a><img src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Package name of Magento's core module A</td>
+			<td>3.0.0</td>
+			<td>Module</td>
+			<td>Magento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		<tr id="row-expandable" class="row-collapse collapse last">
+			<td></td>
+			<td><i class="icon-enable green icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="On"></i>&nbsp;&nbsp;&nbsp;core module 1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" >Turn Off</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+
+		
+
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target=".rows-multi-expandable-2"><i class="icon-caret-down"></i></a><img src="img/firegento.jpg" width="50px" height="50px">
+			</td>
+			<td>German Setup</td>
+			<td>3.0.0</td>
+			<td>Module, Language, Theme</td>
+			<td>FireGento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		<tr class="rows-multi-expandable-2 row-collapse collapse">
+			<td></td>
+			<td><i class="icon-disabled icon-grey icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Off"></i>&nbsp;&nbsp;&nbsp;German Tax</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#">Turn On</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+
+			</td>
+		</tr>
+		<tr class="rows-multi-expandable-2 row-collapse collapse">
+			<td></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FireGen Theme</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr class="rows-multi-expandable-2 row-collapse collapse">
+			<td></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;German Language</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="rows-multi-expandable-2 row-collapse collapse">
+			<td></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FireGen Library</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target="#row-expandable-2"><i class="icon-caret-down"></i></a><img src="img/placeholder_50x50.jpg" width="50px" height="50px"><i class="icon-alert orange icon-status updates-available" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Update Available"></i>
+			</td>
+			<td>WebShopApps Handling Fees</td>
+			<td>3.0.0</td>
+			<td>Module</td>
+			<td>WebShopp</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		<tr id="row-expandable-2" class="row-collapse collapse last">
+			<td></td>
+			<td><i class="icon-enable green icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="On"></i>&nbsp;&nbsp;&nbsp;Handling Fees</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" >Turn Off</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target="#row-expandable-3"><i class="icon-caret-down"></i></a><img src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Package name of Magento's core module B</td>
+			<td>3.0.0</td>
+			<td>Module</td>
+			<td>Magento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		<tr id="row-expandable-3" class="row-collapse collapse last">
+			<td></td>
+			<td><i class="icon-enable green icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="On"></i>&nbsp;&nbsp;&nbsp;Core module 2b</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#">Turn On</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+
+		<tr>
+			<td>
+				<img class="image-on-non-expandable-row" src="img/placeholder_50x50.jpg" width="50px" height="50px"><i class="icon-alert orange icon-status updates-available" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Update Available"></i>
+			</td>
+			<td>French Language Pack</td>
+			<td>3.0.0</td>
+			<td>Library</td>
+			<td>Magento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td>
+				<img class="image-on-non-expandable-row" src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Varien Library</td>
+			<td>3.0.0</td>
+			<td>Library</td>
+			<td>Magento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<a href="#" class="btn btn-default collapsed" data-toggle="collapse" data-target="#row-expandable-4"><i class="icon-caret-down"></i></a><img src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Package name of Magento's core module C</td>
+			<td>3.0.0</td>
+			<td>Module</td>
+			<td>Magento</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		<tr id="row-expandable-4" class="row-collapse collapse last">
+			<td></td>
+			<td><i class="icon-enable green icon-status" data-container="body" data-toggle="popover" data-placement="bottom" data-content="On"></i>&nbsp;&nbsp;&nbsp;Core module 3</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#">Turn On</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Uninstall</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<img class="image-on-non-expandable-row" src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Spanish Language Pack</td>
+			<td>3.0.0</td>
+			<td>Language</td>
+			<td>Language Pro</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<img class="image-on-non-expandable-row" src="img/placeholder_50x50.jpg" width="50px" height="50px">
+			</td>
+			<td>Chinese Language Pack</td>
+			<td>3.0.0</td>
+			<td>Language</td>
+			<td>Language Pro</td>
+			<td>13 Dec. 2014</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="dropdown" aria-expanded="false">Action</button>
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li><a href="#" data-toggle="modal" data-target="#delete-term-modal">Delete</a></li>
+						<li><a href="#" class="disabled">Update</a></li>
+						<li><a href="#">Add to Queue</a></li>
+					</ul>
+				</div>	
+			</td>
+		</tr>
+		
+		
+
+	</tbody>
+
+
+
+
+</table>
+
+
+
+
+	<!--<img src="img/extensionMgmnt-datagrid.png">-->
+
+
+	</div><!--12 columns-->
+
+</div><!--End main row content -->
+	</div>
+	
+</div><!-- /.admin-page -->
+<script src="http://belbiy.github.io/ux-prototype/deploy-tool/js/deploy_tool.js"></script>
+
+</div><!-- /.main-wrap -->
+<nav class="app-nav">
+	<div class="app-nav-wrap">
+		<header>
+			<div class="app-nav-title"></div>
+			<div class="app-nav-description"></div>
+			<div class="app-nav-interactive-control"><label><input type="checkbox" class="app-show-interactive-toggle" /> show interactive areas</label></div>
+		</header>
+
+		<div class="app-nav-subtitle">Prototypes</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/menu.html">New Menu</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/page.html">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/">Product Creation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/new-product-01.html">New product</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/installation/">Installation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/">Deployment Tool</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/create-order/">Order Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/search/">Search Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html">Theme Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html">Visual Merchandiser</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system-config/">System Configuration</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/dashboard/">Dashboard</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system/indexers.html">Index Management</a></li>
+				
+				
+		
+			
+		
+		</ul>
+		
+		
+		<div class="app-nav-subtitle">Patterns</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/messaging.html">Alerts and Messages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/breadcrumb.html">Breadcrumbs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/button-bar.html">Button Bar</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/data-grid.html">Data Grid Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/forms.html">Form Patterns</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/joyride.html">Joyride</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/modals.html">Modals Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels.html">Panels</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels-accordion.html">Panels Accordion</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/index.html">Pattern Reference</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tabs.html">Tabs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tile-layout.html">Tile Layout</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/trees.html">Trees</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/typography.html">Typography</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/wizard.html">Wizard</a></li>
+				
+				
+		
+			
+		
+		</ul>
+	
+	
+	</div>
+</nav>
+
+
+
+
+</html>

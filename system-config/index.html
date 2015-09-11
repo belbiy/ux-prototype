@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>System Configuration</title>
+	<meta name="description" content="Magento 2 UX Prototype
+">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/app.css" />
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/custom-bootstrap.css" />
+	
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery-ui.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/app.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/bootstrap.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/custom-bootstrap.js"></script>
+
+</head>	
+<body>
+<div class="app-main-wrap">
+
+<div class="admin-page">
+
+	<nav class="admin-nav">
+	<div class="admin-nav-main">
+		<a href="http://belbiy.github.io/ux-prototype/" class="logo"><i class="icon-mage-logo"></i></a>
+		<ul class="nav">
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/dashboard/" class=" app-interactive"><i class="icon-dashboard"></i> Dashboard</a></li>
+			<li class="sales"><a href="#" class=""><i class="icon-sales"></i> Sales</a></li>
+			<li class="products"><a href="#" class=""><i class="icon-products"></i> Products</a></li>
+			<li class="customers"><a href="#" class=""><i class="icon-customer"></i> Customers</a></li>
+			<li class="marketing"><a href="#" class=""><i class="icon-marketing"></i> Marketing</a></li>
+			<li class="content"><a href="#" class=""><i class="icon-content"></i> Content</a></li>
+			<li class="reports"><a href="#" class=""><i class="icon-reports"></i> Reports</a></li>
+			<li class="store"><a href="#" class=""><i class="icon-store"></i> Stores</a></li>
+			<li class="system"><a href="#" class=" current-page "><i class="icon-settings"></i> System</a></li>
+		</ul>
+	</div><!-- /.admin-nav-main -->
+	<div class="admin-nav-bg"></div>
+
+
+
+
+	<div class="admin-nav-secondary sales-secondary">
+		<h2 class="admin-nav-heading">Sales</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/create-order/index.html" class="app-interactive">Orders</a></li>
+			<li><a href="#">Invoices</a></li>
+			<li><a href="#">Shipments</a></li>
+			<li><a href="#">Credit Memos</a></li>
+			<li><a href="#">Returns</a></li>
+			<li><a href="#">Billing Agreements</a></li>
+			<li><a href="#">Transactions</a></li>
+			<li><a href="#">Recurring Billing</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary products-secondary">
+		<h2 class="admin-nav-heading">Products</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/products/index.html" class="app-interactive">Catalog</a></li>
+			<li><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html" class="app-interactive">Categories</a></li>
+		</ul>
+		<h3 class="admin-nav-subheading">Google Content</h3>
+		<ul class="nav">
+			<li><a href="#">Attributes</a></li>
+			<li><a href="#">Items</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary customers-secondary">
+		<h2 class="admin-nav-heading">Customers</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="#">All Customers</a></li>
+			<li><a href="#">Segments</a></li>
+			<li><a href="#">Now Online</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary marketing-secondary">
+		<h2 class="admin-nav-heading">Marketing</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Promotions</h3>
+				<ul class="nav">
+					<li><a href="#">Catalog Price Rules</a></li>
+					<li><a href="#">Related Products Rules</a></li>
+					<li><a href="#">Cart Price Rules</a></li>
+					<li><a href="#">Gift Card Accounts</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Private Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Invitations</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Communications</h3>
+				<ul class="nav">
+					<li><a href="#">Email Templates</a></li>
+					<li><a href="#">Newsletter Template</a></li>
+					<li><a href="#">Newsletter Queue</a></li>
+					<li><a href="#">Newsletter Subscribers</a></li>
+					<li><a href="#">Email Reminders</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">SEO & Search</h3>
+				<ul class="nav">
+					<li><a href="#">URL Rewrites</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/search/index.html" class="app-interactive">Search Management</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">User Content</h3>
+				<ul class="nav">
+					<li><a href="#">Reviews</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary content-secondary">
+		<h2 class="admin-nav-heading">Content</h2>
+
+		<h3 class="admin-nav-subheading">Elements</h3>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+			<li><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+			<li><a href="#">Blocks</a></li>
+			<li><a href="#">Banners</a></li>
+			<li><a href="#">Frontend Apps</a></li>
+		</ul>
+
+		<h3 class="admin-nav-subheading">Design</h3>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html" class="app-interactive">Themes</a></li>
+			<li><a href="#">Store Designer</a></li>
+			<li><a href="#">Schedule</a></li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+	<div class="admin-nav-secondary reports-secondary">
+		<h2 class="admin-nav-heading">Reports</h2>
+		<div class="admin-nav-description">Pellentesque sit amet odio nec libero efficitur dapibus. Proin quis tincidunt tortor.</div>
+
+		<div class="row">
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Marketing</h3>
+				<ul class="nav">
+					<li><a href="#">Products in Cart</a></li>
+					<li><a href="#">Search Terms</a></li>
+					<li><a href="#">Abandoned Carts</a></li>
+					<li><a href="#">Newsletter Problem Reports</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Reviews</h3>
+				<ul class="nav">
+					<li><a href="#">By Customers</a></li>
+					<li><a href="#">By Products</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Orders</a></li>
+					<li><a href="#">Tax</a></li>
+					<li><a href="#">Invoiced</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Refunds</a></li>
+					<li><a href="#">Coupons</a></li>
+					<li><a href="#">PayPal Settlement</a></li>
+				</ul>
+
+
+				<h3 class="admin-nav-subheading">Customers</h3>
+				<ul class="nav">
+					<li><a href="#">Order Total</a></li>
+					<li><a href="#">Order Count</a></li>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Wish Lists</a></li>
+					<li><a href="#">Segments</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Products</h3>
+				<ul class="nav">
+					<li><a href="#">Views</a></li>
+					<li><a href="#">Bestsellers</a></li>
+					<li><a href="#">Low Stock</a></li>
+					<li><a href="#">Ordered</a></li>
+					<li><a href="#">Downloads</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Private Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Invitations</a></li>
+					<li><a href="#">Invited Customers</a></li>
+					<li><a href="#">Conversions</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Statistics</h3>
+				<ul class="nav">
+					<li><a href="#">Refresh statistics</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary store-secondary">
+		<h2 class="admin-nav-heading">Stores</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Settings</h3>
+				<ul class="nav">
+					<li><a href="#">All Stores</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/system-config/index.html" class="app-interactive">Configuration</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Order Status</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Taxes</h3>
+				<ul class="nav">
+					<li><a href="#">Tax Rules</a></li>
+					<li><a href="#">Tax Zones and Rates</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Currency</h3>
+				<ul class="nav">
+					<li><a href="#">Currency Rates</a></li>
+					<li><a href="#">Currency Symbols</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Currency</h3>
+				<ul class="nav">
+					<li><a href="#">Currency Rates</a></li>
+					<li><a href="#">Currency Symbols</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Attributes</h3>
+				<ul class="nav">
+					<li><a href="#">Customer</a></li>
+					<li><a href="#">Customer Address</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Product Template</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">Rating</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Other Settings</h3>
+				<ul class="nav">
+					<li><a href="#">Reward Exchange Rates</a></li>
+					<li><a href="#">Gift Wrapping</a></li>
+					<li><a href="#">Gift Registry</a></li>
+					<li><a href="#">Customer Groups</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="admin-nav-secondary system-secondary">
+		<h2 class="admin-nav-heading">System</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Data Transfer</h3>
+				<ul class="nav">
+					<li><a href="#">Import</a></li>
+					<li><a href="#">Export</a></li>
+					<li><a href="#">Import/Export Tax Rates</a></li>
+					<li><a href="#">Scheduled</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Extensions</h3>
+				<ul class="nav">
+					<li><a href="#">Integrations</a></li>
+
+				</ul>
+
+				<h3 class="admin-nav-subheading">Tools</h3>
+				<ul class="nav">
+					<li><a href="#">Cache Management</a></li>
+					<li><a href="#">Backups</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/system/indexers.html" class="app-interactive">Index Management</a></li>
+					<li><a href="#">Backups</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Permissions</h3>
+				<ul class="nav">
+					<li><a href="#">All Users</a></li>
+					<li><a href="#">Locked Users</a></li>
+					<li><a href="#">User Roles</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Action Log</h3>
+				<ul class="nav">
+					<li><a href="#">Report</a></li>
+					<li><a href="#">Archive</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Other Settings</h3>
+				<ul class="nav">
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Custom Variables</a></li>
+					<li><a href="#">Manage Encryption Key</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+</nav>
+
+
+	<div class="main-content">
+
+
+		<div class="admin-top-menu">
+			<span class="admin-search">
+				<input id="search" type="search" class="form-control" placeholder="search" autocomplete="off" />
+				<label for="search"><i class="icon-search"></i></label>
+			</span>
+			<span class="admin-notifications">
+			<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-annoucement"></i><span class="label label-danger">3</span></button>
+			<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#">See all</a></li>
+
+				</ul></span>
+
+			</span>
+			<span class="admin-user">
+				<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon icon-user"></i> Admin <span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					<li><a href="#">Account Settings</a></li>
+					<li><a href="#">Customer View</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Sign out</a></li>
+				</ul>
+				</span>
+			</span>
+		</div><!-- /.admin-top-menu -->
+
+
+
+		        <h1>System Configurations</h1>
+       <div id="button-bar" class= "button-bar">
+        <div class= "row">
+        
+               <div class = "col-md-8 scope-selector-alignment">
+                
+                <span class="scope-selector-center open-console"> <strong>Scope</strong>: Default Config </span><span><i class="icon-help"></i></span> 
+           </div> 
+
+            <div class = "col-md-4">
+
+            <div>
+
+                  <button class="btn btn-primary btn-lg">Save Config</button>
+
+                </div><!--alignment -->
+
+               </div><!--4 columns-->
+
+      </div><!--button bar -->
+
+    </div> <!--row-->
+        <br>
+        <!--start of content-->
+         <div class="row">
+             <div class="col-md-3">
+
+
+                <div class="panel-group system-config-menu" id="accordion-menu" role="tablist" aria-multiselectable="true">
+                   <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <strong>GENERAL</strong>
+                          <span id="carrot-icon" class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body system-config-menu">
+                          <ul>
+                            <li>General</li>
+                            <li>Web</li>
+                            <li>Design</li>
+                            <li>Currency Setup</li>
+                            <li>Store Email Addresses</li>
+                            <li>Contacts</li>
+                            <li>Reports</li>
+                            <li>Content Management</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <strong>CATALOG</strong><span id="carrot-icon"  class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body system-config-menu">
+                          <ul>
+                            <li>Catalog</li>
+                            <li>Inventory</li>
+                            <li>XML Sitemap</li>
+                            <li>RSS Feeds</li>
+                            <li>Email to a Friend</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <strong>CUSTOMERS</strong><span id="carrot-icon"  class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body system-config-menu">
+                         <ul>
+                            <li>Newsletter</li>
+                            <li>Customer Configuration</li>
+                            <li>Wishlist</li>
+                            <li>Promotions</li>
+                            <li>Persistent Shopping Cart</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <strong>SALES</strong><span id="carrot-icon"  class="icon-caret-up system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body system-config-menu">
+                        <ul>
+                            <li>Sales</li>
+                            <li>Sales Emails</li>
+                            <li>PDF Print-outs</li>
+                            <li>Tax</li>
+                            <li>Checkout</li>
+                            <li>Shipping Settings</li>
+                            <li>Multishipping Settings</li>
+                            <li>Shipping Methods</li>
+                            <li>Google API</li>
+                            <li class="selected">Payment Methods</li>
+                            <li>Payment Services</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <strong>SEARCH</strong><span id="carrot-icon"  class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body system-config-menu">
+                         <ul>
+                            <li>Search Engine</li>
+                            <li>Catalog Search</li>
+                            <li>Content Search</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <strong >SERVICES</strong><span id="carrot-icon"  class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body system-config-menu">
+                          <ul>
+                            <li>Magento Web API</li>
+                            <li>OAuth</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel system-config-menu">
+                    <div class="panel-heading system-config-menu" role="tab" id="headingSeven">
+                      <h4 class="panel-title">
+                        <a class="collapsed menu-control" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          <strong>ADVANCED</strong><span id="carrot-icon"  class="icon-caret-down system-config-menu-icon" aria-hidden="true"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                      <div class="panel-body system-config-menu">
+                          <ul>
+                            <li>Admin</li>
+                            <li>System</li> 
+                            <li>Advanced</li>
+                            <li>Developer</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            <!--Start of main content column-->
+
+
+         
+             <div class="col-md-9">
+                <h2> Payment Methods </h2>
+            
+                <div class="panel-group no-border-mage" id="accordion2">
+              <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseOne">
+                  <h4 class="panel-title panel-title-mage sys-config sys-config expander-collapsed">
+                    <a >
+                      Merchant Location
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label required" for="dropwown-1">Label for Dropdown</label>
+                            <div class="col-sm-6">
+                                <select id="dropwown-1" class="select-mage">
+                                    <option>United States</option>
+                                
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                 <span class="scope-label-system-config"> [Website] </span>
+                            </div>
+
+
+                        </div>
+
+
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseTwo">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Paypal All-in-One Payment Solutions
+                    </a>
+                      <span class="help-block system-config-expandable">Accept and process credit cards and Paypal payments. </span>
+
+                  </h4>
+                </div>
+                <div id="content-collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                   <!-- paypal option-->
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Payments Advanced (Includes Express Checkout)</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Accept payments with a PCI-compliant checkout that keeps customers on your site.<a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                    <br><br>
+                     <!-- paypal option-->
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Payments Pro (Includes Express Checkout)</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Accept payments with a completely customizable checkout.<a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                    <br><br>
+                     <!-- paypal option-->
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Payments Standard (Includes Express Checkout)</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Accept credit card and PayPal payments securely.<a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseThree">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                        Paypal Payment Gateways
+                    </a>
+                     <span class="help-block system-config-expandable">Process payments using your own internet merchant account. <a href="#"> Help </a></span>
+
+                  </h4>
+                </div>
+                <div id="content-collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     
+                    <!-- paypal option-->
+                    <label>
+                        <span><input id ="PayflowPro-checkbox" type = "checkbox" class="checkbox-mage" data-toggle="collapse" data-target="#PayflowPro-content" aria-expanded="false" aria-controls="PayflowPro-content">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Payflow Pro (Includes Express Checkout)</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Connect your merchant account with fully customizable gateway that lets customers
+                            pay without leaving your site. <a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                    <!--second level - paypal option selected -->
+                    <br>
+                  <div id="PayflowPro-content" class="collapse">
+                    <div id="PayflowPro-secondLevel">
+
+
+                         <div class="global-warning-message">
+
+                            <p><span><i class="icon-alert icon-alert-color icon-alert-size"></i> &nbsp; &nbsp;You must configure settings below before Payflow Pro will work.</p>
+                   
+                            
+                        </div><!--end of global message-->
+
+
+                          <div class="panel-group no-border-mage" id="accordion">
+                            <div class="panel panel-mage">
+                              <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseOne-secondLevel">
+                                <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                  <a >
+                                    Required PayPal Settings
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOne-secondLevel" class="panel-collapse collapse">
+                                <div class="panel-body system-config-padding">
+                                      
+                                      <!--third level-->
+                                      <div id="third-level-of-panels">
+
+                                         <div class="panel-group no-border-mage" id="accordion-third-level">
+                                          <div class="panel panel-mage">
+                                            <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseOne-thirdLevel">
+                                              <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                <a >
+                                                  Payflow Pro and Express Checkout
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseOne-thirdLevel" class="panel-collapse collapse">
+                                              <div class="panel-body ">
+                                                <form class="form-horizontal">
+                                                            <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Email Associated with PayPal Merchant Account</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    <p class="help-block">Start accepting payments via PayPal! </p>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Partner</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">User</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Vendor</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Password</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "password" class="form-control" id="inputPassword" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                               <div class="form-group row">
+                                                                    <label class="col-sm-3 control-label">Test Mode</label>
+                                                                    <div class="col-sm-6">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                             <input type = "checkbox" class="checkbox-mage">
+                                                                                 &nbsp;&nbsp;&nbsp;Test Mode</input>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <span class="scope-label-system-config"> [Website] </span>
+                                                                    </div>
+                                                               </div>  
+                                                               <div class="form-group row">
+                                                                    <label class="col-sm-3 control-label">Proxy</label>
+                                                                    <div class="col-sm-6">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                             <input type = "checkbox" class="checkbox-mage">
+                                                                                 &nbsp;&nbsp;&nbsp;Use Proxy</input>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <span class="scope-label-system-config"> [Website] </span>
+                                                                    </div>
+                                                               </div>  
+                                                               <div class="form-group row">
+                                                                    <label class="col-sm-3 control-label">Bill Me Later</label>
+                                                                    <div class="col-sm-6">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                             <input type = "checkbox" class="checkbox-mage">
+                                                                                 &nbsp;&nbsp;&nbsp;Enable Bill Me Later</input>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <span class="scope-label-system-config"> [Website] </span>
+                                                                    </div>
+                                                               </div>  
+
+                                                          </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-mage no-border-mage">
+                                            <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseTwo-thirdLevel">
+                                              <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                <a>
+                                                  Advertise Bill Me Later
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseTwo-thirdLevel" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <div class="global-warning-message">
+                                                    <p class="help-block"><strong>Give your sales a boost when you advertise financing</strong></p>
+                                                    <p class="help-block"> Why advertise financing? PayPal helps turn browsers into buyers with financing from Bill Me Later. Your customers have mroe timr to pay, whle you get paid up front - at no additional cost to you. Use PayPal's free banner ads that let you advertgise Bill Me Later financing as a payment option when your customers check out with PayPal. The PayPal Advertising Program has been shown to generate additional purchases as well as increase consumer's average purchase sizes by 15% or more. <a href="#">See Details</a>
+                                                    <br>
+                                                <br>
+                                                </div><!--end of global message-->
+                                                <br>
+                                                 <form class="form-horizontal">
+                                                            <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Publisher ID</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    <p class="help-block">Required to display a banner </p><br>
+                                                                    <button class="btn btn-tertiary"> Get Publisher ID from PayPal </button>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Website] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+
+                                                </form>
+                        
+                                               <div class="fourth-level-of-panels">
+                                                 <div class="panel-group no-border-mage" id="accordion-fourth-level-bml">
+                                                  <div class="panel panel-mage">
+                                                    <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseOne-fourthLevel-bml">
+                                                      <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                        <a >
+                                                          Home Page
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapseOne-fourthLevel-bml" class="panel-collapse collapse">
+                                                      <div class="panel-body">
+                                                         tbd
+                                                      </div>
+                                                    </div>
+                                                  </div><!--end of one section-->
+                                                  <div class="panel panel-mage">
+                                                    <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseTwo-fourthLevel-bml">
+                                                      <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                        <a >
+                                                          Catalog Category Page
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapseTwo-fourthLevel-bml" class="panel-collapse collapse">
+                                                      <div class="panel-body">
+                                                        <form class="form-horizontal">
+                                                            <div class="form-group row">
+                                                                <label class = "col-sm-3 control-label">
+                                                                   Display
+                                                                </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="checkbox">
+                                                                      <label><input type="checkbox" class="checkbox-mage">Display in Catalog Category Page</label>
+                                                                    </div>
+                                                                </div>
+                                                                 <div class="col-sm-3">
+                                                                      <span class="scope-label-system-config"> [Website] </span>
+                                                                  </div>
+                                                                </div><!--end of form group row-->
+                                                                <div class="form-group row">
+                            
+                                                                  <label for="inputText" class="col-sm-3 control-label">Position</label>
+                                                                  <div class="col-sm-6">
+                                                                      <select id="dropdown-1" class="select-mage">
+                                                                      <option>Header (center)</option>
+                                                                  
+                                                                       </select>
+                                                                     
+                                                                  </div>
+                                                                  <div class="col-sm-3">
+                                                                      <span class="scope-label-system-config"> [Website] </span>
+                                                                  </div>
+                                                             </div> <!--end of form group row-->
+                                                             <div class="form-group row">
+                            
+                                                                  <label for="inputText" class="col-sm-3 control-label">Size</label>
+                                                                  <div class="col-sm-6">
+                                                                      <select id="dropdown-1" class="select-mage">
+                                                                      <option>190 x 100</option>
+                                                                  
+                                                                       </select>
+                                                                     
+                                                                  </div>
+                                                                  <div class="col-sm-3">
+                                                                      <span class="scope-label-system-config"> [Website] </span>
+                                                                  </div>
+                                                             </div> <!--end of form group row-->
+                                                        </form>
+                                                      </div>
+                                                    </div>
+                                                  </div><!--end of section-->
+                                                   <div class="panel panel-mage">
+                                                    <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseThree-fourthLevel-bml">
+                                                      <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                        <a >
+                                                          Catalog Product Page
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapseThree-fourthLevel-bml" class="panel-collapse collapse">
+                                                      <div class="panel-body">
+                                                         tbd
+                                                      </div>
+                                                    </div>
+                                                  </div><!--end of section-->
+                                                   <div class="panel panel-mage">
+                                                    <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseFour-fourthLevel-bml">
+                                                      <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                        <a >
+                                                          Checkout Cart Page
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapseFour-fourthLevel-bml" class="panel-collapse collapse">
+                                                      <div class="panel-body">
+                                                         tbd
+                                                      </div>
+                                                    </div>
+                                                  </div><!--end of section-->
+                                                </div>
+                                              </div> <!--fourth level of panels ends here-->
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-mage">
+                              <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseTwo-secondLevel">
+                                <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                  <a>
+                                    PayPal Payflow Pro
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseTwo-secondLevel" class="panel-collapse collapse">
+                                <div class="panel-body system-config-padding">
+                                  <form class="form-horizontal">
+
+                                       <div class="form-group row">
+
+                                          <label for="inputText" class="col-sm-3 control-label">Title</label>
+                                          <div class="col-sm-7">
+                                              <input type = "text" class="form-control" placeholder>
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Store View] </span>
+                                          </div>
+                                      </div> 
+                                      <div class="form-group row">
+
+                                          <label for="inputText" class="col-sm-3 control-label">Sort Order</label>
+                                          <div class="col-sm-7">
+                                              <input type = "text" class="form-control" placeholder>
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Store View] </span>
+                                          </div>
+                                      </div> 
+                                      <div class="form-group row">
+                            
+                                          <label for="inputText" class="col-sm-3 control-label">Payment Action</label>
+                                          <div class="col-sm-7">
+                                              <select id="dropdown-1" class="select-mage">
+                                              <option>Authorization</option>
+                                          
+                                               </select>
+                                             
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Website] </span>
+                                          </div>
+                                     </div> 
+                                     <div class="form-group row">
+                            
+                                          <label for="inputText" class="col-sm-3 control-label">Credit Card Settings</label>
+                                          <div class="col-sm-7 list-box-mage-padding">
+                                             Select allowed credit card types
+                                             <br><br>
+                                             <div class="list-box-mage">
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                         <input type = "checkbox" class="checkbox-mage">
+                                                             &nbsp;&nbsp;&nbsp;American Express</input>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                         <input type = "checkbox" class="checkbox-mage">
+                                                             &nbsp;&nbsp;&nbsp;Visa</input>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                         <input type = "checkbox" class="checkbox-mage">
+                                                             &nbsp;&nbsp;&nbsp;Master Card</input>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                         <input type = "checkbox" class="checkbox-mage">
+                                                             &nbsp;&nbsp;&nbsp;Discover</input>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                         <input type = "checkbox" class="checkbox-mage">
+                                                             &nbsp;&nbsp;&nbsp;JCB</input>
+                                                        </label>
+                                                    </div>
+                                               
+                                             </div>
+                                             <p class="help-block">Supporting of American Express cards require additional agreement.<a href="#"> Learn more </a> </p>
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Website] </span>
+                                          </div>
+                                     </div> 
+
+                                  </form><!--END OF FORMS-->
+
+                                        <!--fourth level (Advanced)-->
+                                        <div class="fourth-level-of-panels">
+                                         <div class="panel-group no-border-mage" id="accordion-fourth-level">
+                                          <div class="panel panel-mage no-border-mage">
+                                            <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseOne-fourthLevel">
+                                              <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                <a >
+                                                  Advanced Settings
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseOne-fourthLevel" class="panel-collapse collapse">
+                                              <div class="panel-body system-config-padding">
+                                                   <form class="form-horizontal">
+                                                         <div class="form-group row">
+                                              
+                                                            <label for="inputText" class="col-sm-3 control-label">Payment Applicable From</label>
+                                                            <div class="col-sm-7">
+                                                                <select id="dropdown-1" class="select-mage">
+                                                                   <option>All Allowed Countries</option>
+                                                                </select>
+                                                               
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <span class="scope-label-system-config"> [Website] </span>
+                                                            </div>
+                                                       </div> 
+
+                                                      <div class="form-group row">
+                                                            <label class="col-sm-3 control-label">Debug</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                     <input type = "checkbox" class="checkbox-mage">
+                                                                         &nbsp;&nbsp;&nbsp;Debug Mode</input>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <span class="scope-label-system-config"> [Website] </span>
+                                                            </div>
+                                                       </div>  
+                                                       <div class="form-group row">
+                                                            <label class="col-sm-3 control-label">SSL Verification</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                     <input type = "checkbox" class="checkbox-mage">
+                                                                         &nbsp;&nbsp;&nbsp;Enable SSL Verification</input>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <span class="scope-label-system-config"> [Website] </span>
+                                                            </div>
+                                                       </div>  
+                                                       <div class="form-group row">
+                                                            <label class="col-sm-3 control-label">CVV Entry</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                     <input type = "checkbox" class="checkbox-mage">
+                                                                         &nbsp;&nbsp;&nbsp;Require CVV Entry</input>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <span class="scope-label-system-config"> [Website] </span>
+                                                            </div>
+                                                       </div>  
+                                                       <br>
+                                                       <h4 class="fifth-level-indentation">  3D Secure </h4>
+                                                       <div class="form-group row">
+                                                            <label class="col-sm-3 control-label">Card Validation</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                     <input type = "checkbox" class="checkbox-mage">
+                                                                         &nbsp;&nbsp;&nbsp;3D Secure Card Validation</input>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <span class="scope-label-system-config"> [Website] </span>
+                                                            </div>
+                                                       </div>  
+                                                  </form>
+                                                  <br>
+                                                  <!--Fifth Level of Panels-->
+                                                   <div id="fifth-level-of-panels">
+
+                                                     <div class="panel-group" id="accordion-third-level">
+                                                      <div class="panel panel-mage">
+                                                        <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseOne-fifthLevel">
+                                                          <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                            <a >
+                                                              Settlement Report Settings
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapseOne-fifthLevel" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            fpo
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-mage no-border-mage">
+                                                        <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseTwo-fifthLevel">
+                                                          <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                                            <a>
+                                                              Frontend Experience Settings
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapseTwo-fifthLevel" class="panel-collapse collapse"><!--Front end experience settings content-->
+                                                          <div class="panel-body system-config-padding">
+                                                          <form class="form-horizontal">
+                                                             <div class="form-group row">
+                              
+                                                                  <label for="inputText" class="col-sm-3 control-label">Payment Product Logo</label>
+                                                                  <div class="col-sm-7">
+                                                                      <select id="dropdown-1" class="select-mage">
+                                                                       <option>We prefer Paypal (150 x 40)</option>
+                                                                  
+                                                                       </select>
+                                                                       <p class="help-block">Display on catalog pages and homepage.</p>
+
+                                                                  </div>
+
+                                                                  <div class="col-sm-2">
+                                                                      <span class="scope-label-system-config"> [Website] </span>
+                                                                  </div>
+
+                                                             </div> <!--end of form group-->
+                                                          </form>
+                                                          <br>
+                                                          <h4 class="fifth-level-indentation"> PayPal Merchant Pages Style </h4><br>
+                                                           <form class="form-horizontal">
+                                                            <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Page Style</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Store View] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Header Image URL</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Store View] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Header Background Color</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Store View] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Header Border Color</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Store View] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+                                                              <!--start of form group-->
+                                                             <div class="form-group row">
+                                                            
+                                                                <label for="inputText" class="col-sm-3 control-label">Page Background Color</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type = "text" class="form-control" placeholder>
+                                                                    
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <span class="scope-label-system-config"> [Store View] </span>
+                                                                </div>
+
+                                                              </div> <!--end of form group-->
+
+                                                          </form>
+
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+
+                                                  </div>
+
+                                              </div>
+                                            </div>
+                                          </div>       
+                                        </div>
+                                       </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-mage">
+                              <div class="panel-heading panel-heading-mage" data-toggle="collapse" href="#collapseThree-secondLevel">
+                                <h4 class="panel-title panel-title-mage sys-config control-secondLevel expander-collapsed-nth-level">
+                                  <a>
+                                    PayPal Express Checkout
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseThree-secondLevel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  <form class="form-horizontal">
+
+                                       <div class="form-group row">
+
+                                          <label for="inputText" class="col-sm-3 control-label">Title</label>
+                                          <div class="col-sm-7">
+                                              <input type = "text" class="form-control" placeholder>
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Store View] </span>
+                                          </div>
+                                      </div> 
+                                      <div class="form-group row">
+
+                                          <label for="inputText" class="col-sm-3 control-label">Sort Order</label>
+                                          <div class="col-sm-7">
+                                              <input type = "text" class="form-control" placeholder>
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Store View] </span>
+                                          </div>
+                                      </div> 
+                                      <div class="form-group row">
+                            
+                                          <label for="inputText" class="col-sm-3 control-label">Payment Action</label>
+                                          <div class="col-sm-7">
+                                              <select id="dropdown-1" class="select-mage">
+                                              <option>Authorization</option>
+                                          
+                                               </select>
+                                             
+                                          </div>
+                                          <div class="col-sm-2">
+                                              <span class="scope-label-system-config"> [Website] </span>
+                                          </div>
+                                     </div> 
+                                      <div class="form-group row">
+                                          <label class="col-sm-3 control-label">Shortcuts</label>
+                                          <div class="col-sm-6">
+                                              <div class="checkbox">
+                                                  <label>
+                                                   <input type = "checkbox" class="checkbox-mage">
+                                                       Use shortcut on shipping cart (Also affects mini-shopping cart.)</input><br>
+                                                   <input type = "checkbox" class="checkbox-mage">
+                                                       Use shortcut on Product View</input>
+                                                  </label>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-3">
+                                              <span class="scope-label-system-config"> [Website] </span>
+                                          </div>
+                                     </div>  
+                                    
+                                  </form><!--END OF FORMS-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                    <br>
+                    <!-- paypal option-->
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Payflow Link (Includes Express Checkout)</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Connect your merchant account with a PCI-compliant gateway that lets customers pay without leaving your site.
+                            <a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseFour">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                      Paypal Express Checkout
+
+                    </a>
+                       <span class="help-block system-config-expandable">Add another payment method to your existing solution as a stand-alone option. <a href="#"> Help </a></span>
+                  </h4>
+                </div>
+                <div id="content-collapseFour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <!-- paypal option-->
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp; <img src="img/PP_logo_h_100x26.png"> &nbsp; Express Checkout</span> &nbsp;<span><i class="icon-help"></i></span> 
+                    </label>
+                    <div class="row"> 
+                        <div class="col-md-7">
+                            <p class="paypal-checkbox-description">Add PayPal as an additional payment method to your checkout page.<a href="#"> Learn more </a> </p>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div><!--end of paypal option-->
+                  </div>
+                </div>
+              </div>
+               <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseFive">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Zero Subtotal Checkout
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseFive" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Zero Subtotal Checkout</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseSix">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Check/Money Order
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseSix" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Check/Money Order</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseSeven">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Cash On Delivery Payment
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseSeven" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Cash On Delivery Payment</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseEight">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Bank Transfer Payment
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseEight" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Bank Transfer Payment</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseNine">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Purchase Order
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseNine" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Purchase Order</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseTen">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Authorize.net
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseTen" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Authorize.net</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseEleven">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Authorize.net Direct Post
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseEleven" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input type = "checkbox" class="checkbox-mage">
+                        &nbsp;Enable Authorize.net Direct Post</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+
+                  </div>
+                </div>
+              </div>
+                   <div class="panel panel-mage">
+                <div class="panel-heading panel-heading-mage" data-toggle="collapse" data-parent="#accordion2" href="#content-collapseTwelve">
+                  <h4 class="panel-title panel-title-mage sys-config expander-collapsed">
+                    <a>
+                     Ogone<
+                    </a>
+                  </h4>
+                </div>
+                <div id="content-collapseTwelve" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label>
+                        <span><input id ="Ogone-checkbox" type = "checkbox" class="checkbox-mage" data-toggle="collapse" data-target="#Ogone-content" aria-expanded="false" aria-controls="Ogone-content">
+                        &nbsp;&nbsp;&nbsp;Enable Ogone</span>
+                    </label>
+                    <span class="scope-label-system-config"> [Website] </span>
+                    <!--Ogone Content-->
+                    <br>
+                    <br>
+
+                    <div id="Ogone-content" class="collapse">
+
+                        <div class="global-warning-message">
+                            <p>Signing up with Ogone</p>
+                            <p class="help-block system-config-expandable">Please enter the correct post back url and offline processing url in Ogone configuration.<br>
+                            <strong>post back url example:</strong> http://myMagentoStore.com/ogone/api/postBack
+                            <br>
+                            <strong>offline procesing url example:</strong> http://myMagentoStore.com/ogone/api/offlineProcess
+                        </p>
+                        <br>
+                            
+                        </div><!--end of global message-->
+
+                        <br><br>
+                        <form class="form-horizontal">
+                           <div class="form-group row">
+                                <label class="col-sm-3 control-label">Debug</label>
+                                <div class="col-sm-6">
+                                    <div class="checkbox">
+                                        <label>
+                                         <input type = "checkbox" class="checkbox-mage">
+                                             &nbsp;&nbsp;&nbsp;Use Debug</input>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div>  
+                           <div class="form-group row">
+
+                                <label for="inputText" class="col-sm-3 control-label">Title</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                            <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">PSPID</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">PSPID is a case sensitive field.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">SHA-IN Pass Phrase</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">Use in posting data from Magento to Ogone. Use in data checking by Ogone before the payment.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">SHA-OUT Pass Phrase</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">Use in posting data from Ogone to Magento. Use in data feedback data checking by Magento.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Parameters</label>
+                                <div class="col-sm-6">
+                                    <div class="checkbox">
+                                        <label>
+                                         <input type = "checkbox" class="checkbox-mage">
+                                             &nbsp;&nbsp;&nbsp;Hash all parameters</input>&nbsp;&nbsp;<span><i class="icon-help"></i></span> 
+                                        </label>
+                                    </div>
+                                     <p class="help-block">To enable this feature, please edit your global security parameters.</p>
+  
+                                </div>
+                                    
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Gateway URL</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">For production, replace "test" with "prod". Example: https://secure.ogone.com/ncol/prod/orderstandard.asp</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Payment Action</label>
+                                <div class="col-sm-6">
+                                    <select id="dropdown-1" class="select-mage">
+                                    <option>Authorization</option>
+                                
+                                     </select>
+                                    <p class="help-block">If you choose "No Operation", Ogone will use the default payment procedure in your Ogone Setup.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Payment Template</label>
+                                <div class="col-sm-6">
+                                    <select id="dropdown-1" class="select-mage">
+                                    <option>Ogone</option>
+                                
+                                     </select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                            <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Title of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+
+                            <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Background Color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."white"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Text Color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."black"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Table Background color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."white"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Table Text Color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."black"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Button Background Color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Button Text Color of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."white"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                           <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Font Family of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."Verdana"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                            <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Logo of the Ogone Template</label>
+                                <div class="col-sm-6">
+                                    <input type = "text" class="form-control" placeholder>
+                                    <p class="help-block">E.g."black"</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Store View] </span>
+                                </div>
+                           </div> 
+
+                            <div class="form-group row">
+                            
+                                <label for="inputText" class="col-sm-3 control-label">Layout of Payment Methods</label>
+                                <div class="col-sm-6">
+                                    <select id="dropwown-1" class="select-mage">
+                                    <option>Horizontally grouped logo with...</option>
+                                
+                                     </select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="scope-label-system-config"> [Website] </span>
+                                </div>
+                           </div> 
+                        </form> <!--end of Ogone forms-->
+
+
+                    </div><!--end of Ogone content-->
+                    <br>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+<!--kk-->
+
+
+</div><!--End main row content -->
+
+
+<script src="http://belbiy.github.io/ux-prototype/system-config/js/system-config.js"></script>
+
+
+	</div><!-- /.main-content -->
+
+	<footer class="admin-footer">
+
+			<div class="row">
+
+				<div class="col-sm-6">
+					Interface Locale
+					<select class="form-control inline  select-mage">
+						<option>English (US)</option>
+					</select>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-1">
+							<i class="icon-logo"></i>
+						</div>
+						<div class="col-sm-11">
+							&copy; Magento is an eBay Inc. company. Copyright© 2014 Magento, Inc. All rights reserved. Magento ver. 0.1.0-alpha107 Help Us Keep Magento Healthy - <a href="#">Report All Bugs</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+</div><!-- /.admin-page -->
+
+</div><!-- /.main-wrap -->
+<nav class="app-nav">
+	<div class="app-nav-wrap">
+		<header>
+			<div class="app-nav-title">System Configuration</div>
+			<div class="app-nav-description">Revamped system configuration uses cleaner look.</div>
+			<div class="app-nav-interactive-control"><label><input type="checkbox" class="app-show-interactive-toggle" /> show interactive areas</label></div>
+		</header>
+
+		<div class="app-nav-subtitle">Prototypes</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/menu.html">New Menu</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/page.html">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/">Product Creation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/new-product-01.html">New product</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/installation/">Installation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/">Deployment Tool</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/create-order/">Order Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/search/">Search Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html">Theme Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html">Visual Merchandiser</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=" active "><a href="http://belbiy.github.io/ux-prototype/system-config/">System Configuration</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/dashboard/">Dashboard</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system/indexers.html">Index Management</a></li>
+				
+				
+		
+			
+		
+		</ul>
+		
+		
+		<div class="app-nav-subtitle">Patterns</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/messaging.html">Alerts and Messages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/breadcrumb.html">Breadcrumbs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/button-bar.html">Button Bar</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/data-grid.html">Data Grid Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/forms.html">Form Patterns</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/joyride.html">Joyride</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/modals.html">Modals Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels.html">Panels</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels-accordion.html">Panels Accordion</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/index.html">Pattern Reference</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tabs.html">Tabs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tile-layout.html">Tile Layout</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/trees.html">Trees</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/typography.html">Typography</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/wizard.html">Wizard</a></li>
+				
+				
+		
+			
+		
+		</ul>
+	
+	
+	</div>
+</nav>
+
+
+
+
+</html>

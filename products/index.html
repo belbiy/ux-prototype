@@ -1,0 +1,5662 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Product Creation</title>
+	<meta name="description" content="Magento 2 UX Prototype
+">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/app.css" />
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/custom-bootstrap.css" />
+	
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery-ui.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/app.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/bootstrap.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/custom-bootstrap.js"></script>
+
+</head>	
+<body>
+<div class="app-main-wrap">
+
+<div class="admin-page">
+
+	<nav class="admin-nav">
+	<div class="admin-nav-main">
+		<a href="http://belbiy.github.io/ux-prototype/" class="logo"><i class="icon-mage-logo"></i></a>
+		<ul class="nav">
+			<li class="dashboard"><a href="http://belbiy.github.io/ux-prototype/dashboard/" class=" app-interactive"><i class="icon-dashboard"></i> Dashboard</a></li>
+			<li class="sales"><a href="#" class=""><i class="icon-sales"></i> Sales</a></li>
+			<li class="products"><a href="#" class=" current-page "><i class="icon-products"></i> Products</a></li>
+			<li class="customers"><a href="#" class=""><i class="icon-customer"></i> Customers</a></li>
+			<li class="marketing"><a href="#" class=""><i class="icon-marketing"></i> Marketing</a></li>
+			<li class="content"><a href="#" class=""><i class="icon-content"></i> Content</a></li>
+			<li class="reports"><a href="#" class=""><i class="icon-reports"></i> Reports</a></li>
+			<li class="store"><a href="#" class=""><i class="icon-store"></i> Stores</a></li>
+			<li class="system"><a href="#" class=""><i class="icon-settings"></i> System</a></li>
+		</ul>
+	</div><!-- /.admin-nav-main -->
+	<div class="admin-nav-bg"></div>
+
+
+
+
+	<div class="admin-nav-secondary sales-secondary">
+		<h2 class="admin-nav-heading">Sales</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/create-order/index.html" class="app-interactive">Orders</a></li>
+			<li><a href="#">Invoices</a></li>
+			<li><a href="#">Shipments</a></li>
+			<li><a href="#">Credit Memos</a></li>
+			<li><a href="#">Returns</a></li>
+			<li><a href="#">Billing Agreements</a></li>
+			<li><a href="#">Transactions</a></li>
+			<li><a href="#">Recurring Billing</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary products-secondary">
+		<h2 class="admin-nav-heading">Products</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/products/index.html" class="app-interactive">Catalog</a></li>
+			<li><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html" class="app-interactive">Categories</a></li>
+		</ul>
+		<h3 class="admin-nav-subheading">Google Content</h3>
+		<ul class="nav">
+			<li><a href="#">Attributes</a></li>
+			<li><a href="#">Items</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary customers-secondary">
+		<h2 class="admin-nav-heading">Customers</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+		<ul class="nav">
+			<li><a href="#">All Customers</a></li>
+			<li><a href="#">Segments</a></li>
+			<li><a href="#">Now Online</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary marketing-secondary">
+		<h2 class="admin-nav-heading">Marketing</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Promotions</h3>
+				<ul class="nav">
+					<li><a href="#">Catalog Price Rules</a></li>
+					<li><a href="#">Related Products Rules</a></li>
+					<li><a href="#">Cart Price Rules</a></li>
+					<li><a href="#">Gift Card Accounts</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Private Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Invitations</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Communications</h3>
+				<ul class="nav">
+					<li><a href="#">Email Templates</a></li>
+					<li><a href="#">Newsletter Template</a></li>
+					<li><a href="#">Newsletter Queue</a></li>
+					<li><a href="#">Newsletter Subscribers</a></li>
+					<li><a href="#">Email Reminders</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">SEO & Search</h3>
+				<ul class="nav">
+					<li><a href="#">URL Rewrites</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/search/index.html" class="app-interactive">Search Management</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">User Content</h3>
+				<ul class="nav">
+					<li><a href="#">Reviews</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary content-secondary">
+		<h2 class="admin-nav-heading">Content</h2>
+
+		<h3 class="admin-nav-subheading">Elements</h3>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+			<li><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+			<li><a href="#">Blocks</a></li>
+			<li><a href="#">Banners</a></li>
+			<li><a href="#">Frontend Apps</a></li>
+		</ul>
+
+		<h3 class="admin-nav-subheading">Design</h3>
+		<ul class="nav">
+			<li><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html" class="app-interactive">Themes</a></li>
+			<li><a href="#">Store Designer</a></li>
+			<li><a href="#">Schedule</a></li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+	<div class="admin-nav-secondary reports-secondary">
+		<h2 class="admin-nav-heading">Reports</h2>
+		<div class="admin-nav-description">Pellentesque sit amet odio nec libero efficitur dapibus. Proin quis tincidunt tortor.</div>
+
+		<div class="row">
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Marketing</h3>
+				<ul class="nav">
+					<li><a href="#">Products in Cart</a></li>
+					<li><a href="#">Search Terms</a></li>
+					<li><a href="#">Abandoned Carts</a></li>
+					<li><a href="#">Newsletter Problem Reports</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Reviews</h3>
+				<ul class="nav">
+					<li><a href="#">By Customers</a></li>
+					<li><a href="#">By Products</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Orders</a></li>
+					<li><a href="#">Tax</a></li>
+					<li><a href="#">Invoiced</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Refunds</a></li>
+					<li><a href="#">Coupons</a></li>
+					<li><a href="#">PayPal Settlement</a></li>
+				</ul>
+
+
+				<h3 class="admin-nav-subheading">Customers</h3>
+				<ul class="nav">
+					<li><a href="#">Order Total</a></li>
+					<li><a href="#">Order Count</a></li>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Wish Lists</a></li>
+					<li><a href="#">Segments</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h3 class="admin-nav-subheading">Products</h3>
+				<ul class="nav">
+					<li><a href="#">Views</a></li>
+					<li><a href="#">Bestsellers</a></li>
+					<li><a href="#">Low Stock</a></li>
+					<li><a href="#">Ordered</a></li>
+					<li><a href="#">Downloads</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Private Sales</h3>
+				<ul class="nav">
+					<li><a href="#">Invitations</a></li>
+					<li><a href="#">Invited Customers</a></li>
+					<li><a href="#">Conversions</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Statistics</h3>
+				<ul class="nav">
+					<li><a href="#">Refresh statistics</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="admin-nav-secondary store-secondary">
+		<h2 class="admin-nav-heading">Stores</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Settings</h3>
+				<ul class="nav">
+					<li><a href="#">All Stores</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/system-config/index.html" class="app-interactive">Configuration</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Order Status</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Taxes</h3>
+				<ul class="nav">
+					<li><a href="#">Tax Rules</a></li>
+					<li><a href="#">Tax Zones and Rates</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Currency</h3>
+				<ul class="nav">
+					<li><a href="#">Currency Rates</a></li>
+					<li><a href="#">Currency Symbols</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Currency</h3>
+				<ul class="nav">
+					<li><a href="#">Currency Rates</a></li>
+					<li><a href="#">Currency Symbols</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Attributes</h3>
+				<ul class="nav">
+					<li><a href="#">Customer</a></li>
+					<li><a href="#">Customer Address</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Product Template</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">Rating</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Other Settings</h3>
+				<ul class="nav">
+					<li><a href="#">Reward Exchange Rates</a></li>
+					<li><a href="#">Gift Wrapping</a></li>
+					<li><a href="#">Gift Registry</a></li>
+					<li><a href="#">Customer Groups</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="admin-nav-secondary system-secondary">
+		<h2 class="admin-nav-heading">System</h2>
+		<div class="admin-nav-description">Lorem ipsum dolor sit ament.</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Data Transfer</h3>
+				<ul class="nav">
+					<li><a href="#">Import</a></li>
+					<li><a href="#">Export</a></li>
+					<li><a href="#">Import/Export Tax Rates</a></li>
+					<li><a href="#">Scheduled</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Extensions</h3>
+				<ul class="nav">
+					<li><a href="#">Integrations</a></li>
+
+				</ul>
+
+				<h3 class="admin-nav-subheading">Tools</h3>
+				<ul class="nav">
+					<li><a href="#">Cache Management</a></li>
+					<li><a href="#">Backups</a></li>
+					<li><a href="http://belbiy.github.io/ux-prototype/system/indexers.html" class="app-interactive">Index Management</a></li>
+					<li><a href="#">Backups</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 class="admin-nav-subheading">Permissions</h3>
+				<ul class="nav">
+					<li><a href="#">All Users</a></li>
+					<li><a href="#">Locked Users</a></li>
+					<li><a href="#">User Roles</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Action Log</h3>
+				<ul class="nav">
+					<li><a href="#">Report</a></li>
+					<li><a href="#">Archive</a></li>
+				</ul>
+
+				<h3 class="admin-nav-subheading">Other Settings</h3>
+				<ul class="nav">
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Custom Variables</a></li>
+					<li><a href="#">Manage Encryption Key</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+</nav>
+
+
+	<div class="main-content">
+
+
+		<div class="admin-top-menu">
+			<span class="admin-search">
+				<input id="search" type="search" class="form-control" placeholder="search" autocomplete="off" />
+				<label for="search"><i class="icon-search"></i></label>
+			</span>
+			<span class="admin-notifications">
+			<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-annoucement"></i><span class="label label-danger">3</span></button>
+			<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#"><h4 class="title">Imagine Registration is now Open!</h4><p class="description">Join 100500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento's premier global conference!</p><div class="time">5:52 pm</div></a></li>
+					<li><a href="#">See all</a></li>
+
+				</ul></span>
+
+			</span>
+			<span class="admin-user">
+				<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon icon-user"></i> Admin <span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					<li><a href="#">Account Settings</a></li>
+					<li><a href="#">Customer View</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Sign out</a></li>
+				</ul>
+				</span>
+			</span>
+		</div><!-- /.admin-top-menu -->
+
+
+
+		<h1>Product Catalog</h1>
+
+<div class="button-bar">
+	<div class="btn-group">
+		<button class="btn btn-lg btn-link">Add Grouped Product</button>
+		<button class="btn btn-lg btn-link">Add Bundle Product</button>
+		<button class="btn btn-lg btn-link">Add Gift Card</button>
+		<button class="btn btn-primary btn-lg create-product" onClick="javascipt:location.href='new-product-01.html';">Add Standard Product</button>
+		<!--
+		<button class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			<span class="caret"></span>
+		</button>
+
+		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+			<li><a href="#"> Create Grouped Product</a></li>
+			<li><a href="#"> Create Bundle Product</a></li>
+			<li><a href="#"> Create Gift Card Product</a></li>
+		</ul>-->
+
+	</div>
+</div>
+
+
+<div class="row data-grid-controls controls-first">
+	<div class="col-sm-6">
+		
+		<span class="control-group control-search">
+	<div class="input-group">
+		<input type="search" class="form-control search-input" placeholder="Search by keyword"  autocomplete="off" />
+		<span class="input-group-btn">
+			<button class="btn btn-default btn-search"><i class="icon-search"></i></button>
+		</span>
+	</div>
+</span>
+
+	</div>
+	
+	<div class="col-sm-6 text-right">
+		
+		<span class="control-group control-filter">
+			<button class="btn btn-tertiary filters-toggle collapsed" data-toggle="collapse" data-target="#data-grid-filters" aria-expanded="false" ><i class="icon-filter"></i> Filters</button>
+		</span>
+		
+		
+		<span class="control-group control-view">
+			<span class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-view"></i> Default View <span class="caret"></span></button>
+				<ul class="dropdown-menu " role="menu">
+					
+					<li>
+						<div class="select-view">
+							<a href="#">Cameras</a>
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Cameras" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class="glyphicon icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class="glyphicon icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="select-view">
+							<a href="#">Products by Weight</a> 
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Products by Weight" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class=" icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class=" icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li> 
+						<div class="select-view">
+							<a href="#">Greg's view</a> 
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Greg's view" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class="icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class="icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="divider"></li>
+					<li><a href="#">Save Current View</a></li>
+				</ul>
+			</span>
+		</span>
+		
+		
+		<span class="control-group control-settings">
+			<span class="btn-group control-settings-dropdown">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="icon-settings"></i> Columns <span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					
+					<div class="row">
+						
+						<div class="col-md-4">
+							<div class="settings-columns">
+				
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<label><input type="checkbox" /> Custom Column</label>
+							<label><input type="checkbox" /> Another</label>
+							<label><input type="checkbox" /> Column Heading</label>	
+						</div>
+						
+						<div class="col-md-4">
+							<label><input type="checkbox" /> Custom Column</label>
+							<label><input type="checkbox" /> Another</label>
+							<label><input type="checkbox" /> Column Heading</label>	
+						</div>
+						
+					</div>
+					
+					
+					<div class="row dropdown-buttons">
+						<div class="col-sm-6">
+							<a href="#" class="btn btn-link btn-small btn-reset">Reset</a>
+						</div>
+						<div class="col-sm-6 text-right">
+							<a href="#" class="btn btn-link btn-small btn-cancel">Cancel</a> <button class="btn btn-secondary btn-sm btn-apply">Apply</button>
+						</div>
+					</div>
+					
+				</ul>
+			</span>
+		</span>
+
+		
+	</div>
+	
+</div>
+
+
+
+<div id="data-grid-filters" class="row collapse data-drid-controls controls-filter">
+	<div class="col-md-12">
+	
+		<div class="active-filters collapse">
+			<div class="active-filters-wrap">
+				<label>Active filters:</label> 
+				<span class="filter">Assigned Terms <a href="#" class="badge remove-filter" data-toggle="collapse" data-target=".active-filters"><i class="glyphicon glyphicon-remove"></i></a></span>
+			</div>
+		</div>
+	
+	<div class="row">
+		
+		<div class="col-md-8">
+		<div class="quick-filters">
+			<label>Quick filters:</label> 
+			<label data-toggle="collapse" data-target=".active-filters"><button class="btn btn-tertiary"><input type="checkbox" class="checkbox-mage" /> Assigned Terms </button></label>
+			
+		</div>
+		</div>
+		
+		<div class="col-md-4 text-right more-filters-toggle">
+			
+			<a href="#" data-toggle="collapse" data-target=".more-filters">More Filters <i class="caret"></i></a>
+		
+		</div>
+		
+	</div>
+	
+	<div class="more-filters collapse">
+		<form class="filters-form">
+			<div class="row">
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-id" class="control-label">ID</label>
+						<input type="text" id="filter-id" maxlength="5" class="form-control" style="max-width: 100px;" />
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-sku" class="control-label">SKU</label>
+						<input type="text" id="filter-sku" class="form-control"  />
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-tree" class="control-label">Filter Tree</label>
+						<select class="form-control select-mage" id="filter-tree">
+							<option value="0">Please select...</option>
+							<option value="1">Filter value</option>
+							<option value="2">Another value</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="filter-four" class="control-label">Filter Four</label>
+						<input type="text" id="filter-four" class="form-control"  />
+					</div>
+				</div>
+				
+			</div>
+				
+			<div class="text-right filters-buttons">
+				<button class="btn btn-link" data-toggle="collapse" data-target=".more-filters">Cancel</button> <button class="btn btn-secondary">Apply Filters</button>
+			</div>
+		</form>
+	</div>	
+
+	
+	</div>
+</div>
+
+
+
+<div class="row data-grid-controls controls-second">
+	<div class="col-sm-6">
+		<span class="control-group control-actions">
+
+	<select class="form-control select-mage">
+		<option>Actions</option>
+		<option>Delete</option>
+		<option>Change Status</option>
+		<option>Update Attributes</option>
+	</select>
+
+</span>
+
+<span class="control-group control-items">
+	<span class="items-total"><span class="num">12</span> items found</span>
+	<span class="items-selected"></span>
+</span>
+		
+	</div>
+	<div class="col-sm-6 text-right">	
+		<span class="control-group control-per-page">
+						
+	<select class="form-control select-mage">
+		<option>20</option>
+		<option>30</option>
+		<option>50</option>
+		<option>100</option>
+		<option>200</option>
+		<option>All</option>
+	</select> per page
+							
+</span>
+						
+<span class="control-group control-pages">
+	<button class="btn btn-tertiary"><i class="icon-caret-left"></i></button>
+	<input class="form-control page-number" type="text" value="1" /> of 2 
+	<button class="btn btn-tertiary"><i class="icon-caret-right"></i></button>
+</span>
+		
+	</div>
+</div>
+
+
+<div class="data-grid-controls data-grid-controls-sticky">
+	<div class="data-grid-controls row">
+		
+			
+			<div class="col-sm-6">
+				<span class="control-group control-actions">
+					<select class="form-control select-mage">
+						<option>Actions</option>
+						<option>Delete</option>
+						<option>Change Status</option>
+						<option>Update Attributes</option>
+					</select>		
+				</span>
+				
+				<span class="control-group control-items">
+						12 items found
+						<span class="items-selected"></span>
+				</span>
+		
+			</div>
+			<div class="col-sm-6 text-right">
+				
+				<span class="control-group">
+					<button class="btn btn-default"><i class="icon-search"></i></button>
+				</span>
+				<span class="control-group">
+					<span class="btn-group">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-filter"></i></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Cameras</a> <button class="btn btn-default"><i class="icon-edit"></i></button></li>
+							<li class="divider"></li>
+							<li><a href="#">Save Current View</a></li>
+						</ul>
+					</span>
+				</span>
+				
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-view"></i></button>
+						<ul class="dropdown-menu " role="menu">
+					
+					<li>
+						<div class="select-view">
+							<a href="#">Cameras</a> 
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Cameras" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class="glyphicon icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class="glyphicon icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="select-view">
+							<a href="#">Products by Weight</a> 
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Products by Weight" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class=" icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class=" icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li> 
+						<div class="select-view">
+							<a href="#">Greg's view</a> 
+							<button class="btn btn-default btn-edit"><i class="icon-edit"></i></button>
+						</div>
+						<div class="edit-view"> 
+							<div class="input-group">
+								<input type="text" value="Greg's view" /> 
+								<span class="input-group-btn">
+									<button class="btn-default btn btn-save"><i class="icon-arrow-right"></i></button>
+									<button class="btn-default btn btn-trash"><i class="icon-delete"></i></button>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="divider"></li>
+					<li><a href="#">Save Current View</a></li>
+				</ul>
+
+					</span>
+				</span>
+				
+				<span class="control-group control-settings">
+					<span class="btn-group control-settings-dropdown">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-settings"></i></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							
+							<div class="row">
+								
+								<div class="col-md-4">
+									<div class="settings-columns">
+						
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<label><input type="checkbox" /> Custom Column</label>
+									<label><input type="checkbox" /> Another</label>
+									<label><input type="checkbox" /> Column Heading</label>	
+								</div>
+								
+								<div class="col-md-4">
+									<label><input type="checkbox" /> Custom Column</label>
+									<label><input type="checkbox" /> Another</label>
+									<label><input type="checkbox" /> Column Heading</label>	
+								</div>
+								
+							</div>
+							
+							
+							<div class="row dropdown-buttons">
+								<div class="col-sm-6">
+									<a href="#" class="btn btn-link btn-small btn-reset">Reset</a>
+								</div>
+								<div class="col-sm-6 text-right">
+									<a href="#" class="btn btn-link btn-small btn-cancel">Cancel</a> <button class="btn btn-secondary btn-sm btn-apply">Apply</button>
+								</div>
+							</div>
+							
+						</ul>
+					</span>
+				</span>
+				
+
+				<span class="control-group control-per-page">
+					<select class="form-control select-mage">
+						<option>20</option>
+						<option>30</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>All</option>
+					</select>
+				</span>
+				
+				<span class="control-group control-pages">
+					<button class="btn btn-tertiary"><i class="icon-caret-left"></i></button>
+					<button class="btn btn-tertiary"><i class="icon-caret-right"></i></button>
+				</span>
+				
+			</div>
+	</div>
+		
+	
+	
+</div>
+
+<table class="table data-grid draggable">
+	<thead>
+		<tr>
+    		<th class="col-massaction">
+				<div class="btn-group">
+    				<input type="checkbox" name="" class="massaction-checkbox btn" /><button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    				<span class="caret"></span>
+    				<span class="sr-only">Toggle Dropdown</span>
+					</button>
+    			<ul class="dropdown-menu" role="menu">
+    				<li><a href="#">Select all</a></li>
+    				<li><a href="#">Deselect all</a></li>
+    				<li><a href="#">Select all on this page</a></li>
+    				<li><a href="#">Deselect all on this page</a></li>
+    			</ul>
+    			</div>
+			</th>
+			
+			<th class="draggable">ID</th>
+			<th></th>
+			<th class="draggable">Name</th>
+			<th class="draggable">Type</th>
+			<th class="draggable">Attribute Set</th>
+			<th class="draggable">SKU</th>
+			<th class="draggable">Price</th>
+			<th class="draggable">Quantity</th>
+			<th class="draggable">Visibility</th>
+			<th class="draggable">Status</th>
+			<th class="draggable">Websites</th>
+			<th class="draggable">Actions</th>
+    	</tr>
+	</thead>
+
+    <tbody>
+	
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>306</td>
+			<td><img src="img/product-images/product-03.gif" alt="Buckle Belt" width="50" height="" /></td>
+			<td>Buckle Belt</td>
+			<td>Simple</td>
+			<td>Belts</td>
+			<td>MB-658-997</td>
+			<td>24.99</td>
+			<td>20</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>57</td>
+			<td><img src="img/product-images/product-30.gif" alt="Brown Belt" width="50" height="" /></td>
+			<td>Brown Belt</td>
+			<td>Simple</td>
+			<td>Belts</td>
+			<td>MB-658-999</td>
+			<td>26.99</td>
+			<td>20</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>2</td>
+			<td><img src="img/product-images/product-01.gif" alt="Abominable Hoodie" width="50" height="" /></td>
+			<td>Abominable Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH09-ME-BL</td>
+			<td>69.00</td>
+			<td>87</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>279</td>
+			<td><img src="img/product-images/product-02.gif" alt="Adrienne Trek Jacket" width="50" height="" /></td>
+			<td>Adrienne Trek Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ08-XS-GR</td>
+			<td>48.00</td>
+			<td>134</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>170</td>
+			<td><img src="img/product-images/product-20.gif" alt="Aeon Capri" width="50" height="" /></td>
+			<td>Aeon Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP07-SM-BT</td>
+			<td>48.00</td>
+			<td>765</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>88</td>
+			<td><img src="img/product-images/product-04.gif" alt="Aero Daily Fitness Tee" width="50" height="" /></td>
+			<td>Aero Daily Fitness Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS01-ME-BK</td>
+			<td>24.00</td>
+			<td>98</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>75</td>
+			<td><img src="img/product-images/product-05.gif" alt="Aether Gym Pant" width="50" height="" /></td>
+			<td>Aether Gym Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP11-ME-KH</td>
+			<td>74.00</td>
+			<td>34</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>215</td>
+			<td><img src="img/product-images/product-06.gif" alt="Ajax Full-Zip Sweatshirt" width="50" height="" /></td>
+			<td>Ajax Full-Zip Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH12-ME-GG</td>
+			<td>69.00</td>
+			<td>133</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>164</td>
+			<td><img src="img/product-images/product-07.gif" alt="Alpha Fleece Jacket" width="50" height="" /></td>
+			<td>Alpha Fleece Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ05-ME-BL</td>
+			<td>72.00</td>
+			<td>63</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>245</td>
+			<td><img src="img/product-images/product-08.gif" alt="Ana Running Short" width="50" height="" /></td>
+			<td>Ana Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH10-SM-BP</td>
+			<td>40.00</td>
+			<td>67</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>299</td>
+			<td><img src="img/product-images/product-09.gif" alt="Angel Light Running Short" width="50" height="" /></td>
+			<td>Angel Light Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH06-SM-DG</td>
+			<td>42.00</td>
+			<td>453</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>22</td>
+			<td><img src="img/product-images/product-10.gif" alt="Antonia Racer Tank" width="50" height="" /></td>
+			<td>Antonia Racer Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT08-SM-BG</td>
+			<td>29.00</td>
+			<td>721</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>212</td>
+			<td><img src="img/product-images/product-11.gif" alt="Apollo Running Short" width="50" height="" /></td>
+			<td>Apollo Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH02-ME-BL</td>
+			<td>32.50</td>
+			<td>873</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>5</td>
+			<td><img src="img/product-images/product-12.gif" alt="Arcadio Gym Short" width="50" height="" /></td>
+			<td>Arcadio Gym Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH11-ME-RO</td>
+			<td>20.00</td>
+			<td>950</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>287</td>
+			<td><img src="img/product-images/product-20.gif" alt="Argus All-Weather Tank" width="50" height="" /></td>
+			<td>Argus All-Weather Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT07-ME-GR</td>
+			<td>22.00</td>
+			<td>72</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>257</td>
+			<td><img src="img/product-images/product-21.gif" alt="Ariel Roll Sleeve Sweatshirt" width="50" height="" /></td>
+			<td>Ariel Roll Sleeve Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH09-SM-PU</td>
+			<td>39.00</td>
+			<td>91</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>78</td>
+			<td><img src="img/product-images/product-22.gif" alt="Artemis Running Short" width="50" height="" /></td>
+			<td>Artemis Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH04-XS-BM</td>
+			<td>45.00</td>
+			<td>767</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>187</td>
+			<td><img src="img/product-images/product-01.gif" alt="Atlas Fitness Tank" width="50" height="" /></td>
+			<td>Atlas Fitness Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT11-ME-TE</td>
+			<td>15.00</td>
+			<td>457</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>298</td>
+			<td><img src="img/product-images/product-02.gif" alt="Atomic Endurance Running Tee (Crew-Neck)" width="50" height="" /></td>
+			<td>Atomic Endurance Running Tee (Crew-Neck)</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS12-ME-RE</td>
+			<td>29.00</td>
+			<td>328</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>3</td>
+			<td><img src="img/product-images/product-03.gif" alt="Atomic Endurance Running Tee (V-Neck)" width="50" height="" /></td>
+			<td>Atomic Endurance Running Tee (V-Neck)</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS11-ME-LI</td>
+			<td>24.00</td>
+			<td>369</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>34</td>
+			<td><img src="img/product-images/product-04.gif" alt="Augusta Pullover Jacket" width="50" height="" /></td>
+			<td>Augusta Pullover Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ03-SM-PI</td>
+			<td>57.00</td>
+			<td>781</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>188</td>
+			<td><img src="img/product-images/product-05.gif" alt="Autumn Pullie" width="50" height="" /></td>
+			<td>Autumn Pullie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH03-XS-CA</td>
+			<td>57.00</td>
+			<td>92</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>222</td>
+			<td><img src="img/product-images/product-08.gif" alt="Balboa Persistence Tee" width="50" height="" /></td>
+			<td>Balboa Persistence Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS03-ME-BK</td>
+			<td>29.00</td>
+			<td>765</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>287</td>
+			<td><img src="img/product-images/product-07.gif" alt="Bardot Capri" width="50" height="" /></td>
+			<td>Bardot Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP08-SM-BP</td>
+			<td>48.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>214</td>
+			<td><img src="img/product-images/product-06.gif" alt="Beaumont Summit Kit" width="50" height="" /></td>
+			<td>Beaumont Summit Kit</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ01-ME-YE</td>
+			<td>36.00</td>
+			<td>698</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>142</td>
+			<td><img src="img/product-images/product-09.gif" alt="Bella Tank" width="50" height="" /></td>
+			<td>Bella Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT01-XS-NA</td>
+			<td>29.00</td>
+			<td>512</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>7</td>
+			<td><img src="img/product-images/product-11.gif" alt="Bess Yoga Short" width="50" height="" /></td>
+			<td>Bess Yoga Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH05-SM-NA</td>
+			<td>24.00</td>
+			<td>768</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>246</td>
+			<td><img src="img/product-images/product-10.gif" alt="Breathe-Easy Tank" width="50" height="" /></td>
+			<td>Breathe-Easy Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT09-SM-WH</td>
+			<td>29.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>38</td>
+			<td><img src="img/product-images/product-12.gif" alt="Bruno Compete Hoodie" width="50" height="" /></td>
+			<td>Bruno Compete Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH03-ME-BL</td>
+			<td>63.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>83</td>
+			<td><img src="img/product-images/product-20.gif" alt="Caesar Warm-Up Pant" width="50" height="" /></td>
+			<td>Caesar Warm-Up Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP01-ME-LG</td>
+			<td>35.00</td>
+			<td>63</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>251</td>
+			<td><img src="img/product-images/product-21.gif" alt="Carina Basic Capri" width="50" height="" /></td>
+			<td>Carina Basic Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP09-XS-BL</td>
+			<td>51.00</td>
+			<td>140</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>147</td>
+			<td><img src="img/product-images/product-22.gif" alt="Cassia Funnel Sweatshirt" width="50" height="" /></td>
+			<td>Cassia Funnel Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH08-SM-WH</td>
+			<td>39.00</td>
+			<td>174</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>252</td>
+			<td><img src="img/product-images/product-05.gif" alt="Cassius Sparring Tank" width="50" height="" /></td>
+			<td>Cassius Sparring Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT12-ME-PE</td>
+			<td>15.00</td>
+			<td>163</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>124</td>
+			<td><img src="img/product-images/product-09.gif" alt="Celeste Sports Bra" width="50" height="" /></td>
+			<td>Celeste Sports Bra</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WB03-SM-MI</td>
+			<td>39.00</td>
+			<td>109</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>44</td>
+			<td><img src="img/product-images/product-04.gif" alt="Chaz Kangeroo Hoodie" width="50" height="" /></td>
+			<td>Chaz Kangeroo Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH01-ME-GR</td>
+			<td>45.00</td>
+			<td>430</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>74</td>
+			<td><img src="img/product-images/product-03.gif" alt="Chloe Compete Tank" width="50" height="" /></td>
+			<td>Chloe Compete Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT06-XS-RO</td>
+			<td>39.00</td>
+			<td>170</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>267</td>
+			<td><img src="img/product-images/product-01.gif" alt="Circe Hooded Ice Fleece" width="50" height="" /></td>
+			<td>Circe Hooded Ice Fleece</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH12-SM-GR</td>
+			<td>68.00</td>
+			<td>760</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>129</td>
+			<td><img src="img/product-images/product-02.gif" alt="Cobalt CoolTech Fitness Short" width="50" height="" /></td>
+			<td>Cobalt CoolTech Fitness Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH01-ME-LB</td>
+			<td>44.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>208</td>
+			<td><img src="img/product-images/product-08.gif" alt="Cora Parachute Pant" width="50" height="" /></td>
+			<td>Cora Parachute Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP04-XS-LB</td>
+			<td>75.00</td>
+			<td>770</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>35</td>
+			<td><img src="img/product-images/product-05.gif" alt="Cronus Yoga Pant" width="50" height="" /></td>
+			<td>Cronus Yoga Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP12-ME-BL</td>
+			<td>48.00</td>
+			<td>113</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>42</td>
+			<td><img src="img/product-images/product-03.gif" alt="Daphne Full-Zip Hoodie" width="50" height="" /></td>
+			<td>Daphne Full-Zip Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH06-SM-PU</td>
+			<td>59.00</td>
+			<td>520</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>274</td>
+			<td><img src="img/product-images/product-03.gif" alt="Daria Bikram Pant" width="50" height="" /></td>
+			<td>Daria Bikram Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP10-XS-GP</td>
+			<td>51.00</td>
+			<td>630</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>30</td>
+			<td><img src="img/product-images/product-03.gif" alt="Deion Long-Sleeve EverCool Tee" width="50" height="" /></td>
+			<td>Deion Long-Sleeve EverCool Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS07-ME-BB</td>
+			<td>39.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>123</td>
+			<td><img src="img/product-images/product-03.gif" alt="Deirdre Relaxed-Fit Capri" width="50" height="" /></td>
+			<td>Deirdre Relaxed-Fit Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP12-XS-GM</td>
+			<td>63.00</td>
+			<td>740</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>230</td>
+			<td><img src="img/product-images/product-03.gif" alt="Desiree Fitness Tee" width="50" height="" /></td>
+			<td>Desiree Fitness Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS05-SM-BK</td>
+			<td>24.00</td>
+			<td>96</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>270</td>
+			<td><img src="img/product-images/product-03.gif" alt="Diana Tights" width="50" height="" /></td>
+			<td>Diana Tights</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP06-SM-BL</td>
+			<td>59.00</td>
+			<td>814</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>157</td>
+			<td><img src="img/product-images/product-03.gif" alt="Diva Gym Tee" width="50" height="" /></td>
+			<td>Diva Gym Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS11-SM-YE</td>
+			<td>28.00</td>
+			<td>74</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>73</td>
+			<td><img src="img/product-images/product-03.gif" alt="Echo Fit Compression Short" width="50" height="" /></td>
+			<td>Echo Fit Compression Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH07-SM-BL</td>
+			<td>24.00</td>
+			<td>222</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>133</td>
+			<td><img src="img/product-images/product-03.gif" alt="Electra Bra Top" width="50" height="" /></td>
+			<td>Electra Bra Top</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WB01-SM-GR</td>
+			<td>32.00</td>
+			<td>57</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>16</td>
+			<td><img src="img/product-images/product-03.gif" alt="Elisa EverCool Tee" width="50" height="" /></td>
+			<td>Elisa EverCool Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS06-XS-PU</td>
+			<td>29.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>238</td>
+			<td><img src="img/product-images/product-03.gif" alt="Emma Leggings" width="50" height="" /></td>
+			<td>Emma Leggings</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP02-SM-LB</td>
+			<td>42.00</td>
+			<td>127</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>102</td>
+			<td><img src="img/product-images/product-03.gif" alt="Eos V-Neck Hoodie" width="50" height="" /></td>
+			<td>Eos V-Neck Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH11-SM-NA</td>
+			<td>54.00</td>
+			<td>83</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>237</td>
+			<td><img src="img/product-images/product-03.gif" alt="Erica Evercool Sports Bra" width="50" height="" /></td>
+			<td>Erica Evercool Sports Bra</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WB02-SM-LB</td>
+			<td>39.00</td>
+			<td>77</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>282</td>
+			<td><img src="img/product-images/product-03.gif" alt="Erika Running Short" width="50" height="" /></td>
+			<td>Erika Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH12-SM-SE</td>
+			<td>45.00</td>
+			<td>347</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>122</td>
+			<td><img src="img/product-images/product-03.gif" alt="Erikssen CoolTech Fitness Tank" width="50" height="" /></td>
+			<td>Erikssen CoolTech Fitness Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT01-ME-RE</td>
+			<td>29.00</td>
+			<td>314</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>197</td>
+			<td><img src="img/product-images/product-03.gif" alt="Fiona Fitness Short" width="50" height="" /></td>
+			<td>Fiona Fitness Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH01-SM-BL</td>
+			<td>29.00</td>
+			<td>369/td></td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>85</td>
+			<td><img src="img/product-images/product-03.gif" alt="Frankie Sweatshirt" width="50" height="" /></td>
+			<td>Frankie Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH04-ME-MI</td>
+			<td>50.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>127</td>
+			<td><img src="img/product-images/product-03.gif" alt="Gabrielle Micro Sleeve Top" width="50" height="" /></td>
+			<td>Gabrielle Micro Sleeve Top</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS02-SM-LI</td>
+			<td>28.00</td>
+			<td>162</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>47</td>
+			<td><img src="img/product-images/product-03.gif" alt="Geo Insulated Jogging Pant" width="50" height="" /></td>
+			<td>Geo Insulated Jogging Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP03-ME-BL</td>
+			<td>51.00</td>
+			<td>90</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>176</td>
+			<td><img src="img/product-images/product-03.gif" alt="Gobi HeatTec¨ Tee" width="50" height="" /></td>
+			<td>Gobi HeatTec¨ Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS04-ME-OR</td>
+			<td>29.00</td>
+			<td>162</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>117</td>
+			<td><img src="img/product-images/product-03.gif" alt="Grayson Crewneck Sweatshirt" width="50" height="" /></td>
+			<td>Grayson Crewneck Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH11-ME-CR</td>
+			<td>64.00</td>
+			<td>169</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>223</td>
+			<td><img src="img/product-images/product-03.gif" alt="Gwen Drawstring Bike Short" width="50" height="" /></td>
+			<td>Gwen Drawstring Bike Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH03-SM-DG</td>
+			<td>50.00</td>
+			<td>46</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>17</td>
+			<td><img src="img/product-images/product-03.gif" alt="Gwyn Endurance Tee" width="50" height="" /></td>
+			<td>Gwyn Endurance Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS01-SM-BK</td>
+			<td>24.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>168</td>
+			<td><img src="img/product-images/product-03.gif" alt="Hawkeye Yoga Short" width="50" height="" /></td>
+			<td>Hawkeye Yoga Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH05-ME-DG</td>
+			<td>29.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>286</td>
+			<td><img src="img/product-images/product-03.gif" alt="Helena Hooded Fleece" width="50" height="" /></td>
+			<td>Helena Hooded Fleece</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH10-SM-GR</td>
+			<td>55.00</td>
+			<td>196</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>89</td>
+			<td><img src="img/product-images/product-03.gif" alt="Helios Endurance Tank" width="50" height="" /></td>
+			<td>Helios Endurance Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT04-ME-RO</td>
+			<td>32.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>288</td>
+			<td><img src="img/product-images/product-03.gif" alt="Helios EverCool Tee" width="50" height="" /></td>
+			<td>Helios EverCool Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS05-ME-TE</td>
+			<td>24.00</td>
+			<td>165</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>205</td>
+			<td><img src="img/product-images/product-03.gif" alt="Hera Pullover Hoodie" width="50" height="" /></td>
+			<td>Hera Pullover Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH02-SM-TE</td>
+			<td>29.00</td>
+			<td>932</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>18</td>
+			<td><img src="img/product-images/product-03.gif" alt="Hero Hoodie" width="50" height="" /></td>
+			<td>Hero Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH07-ME-GB</td>
+			<td>54.00</td>
+			<td>99</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>53</td>
+			<td><img src="img/product-images/product-03.gif" alt="Hollister Backyard Sweatshirt" width="50" height="" /></td>
+			<td>Hollister Backyard Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH05-ME-CN</td>
+			<td>52.00</td>
+			<td>84</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>111</td>
+			<td><img src="img/product-images/product-03.gif" alt="Hyperion Elements Jacket" width="50" height="" /></td>
+			<td>Hyperion Elements Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ02-ME-LI</td>
+			<td>51.00</td>
+			<td>67</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>63</td>
+			<td><img src="img/product-images/product-03.gif" alt="Ida Workout Parachute Pant" width="50" height="" /></td>
+			<td>Ida Workout Parachute Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP03-XS-RO</td>
+			<td>48.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>146</td>
+			<td><img src="img/product-images/product-03.gif" alt="Ina Compression Short" width="50" height="" /></td>
+			<td>Ina Compression Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH11-SM-RO</td>
+			<td>49.00</td>
+			<td>105</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>116</td>
+			<td><img src="img/product-images/product-03.gif" alt="Inez Full Zip Jacket" width="50" height="" /></td>
+			<td>Inez Full Zip Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ07-SM-PU</td>
+			<td>59.00</td>
+			<td>108</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>272</td>
+			<td><img src="img/product-images/product-03.gif" alt="Ingrid Running Jacket" width="50" height="" /></td>
+			<td>Ingrid Running Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ04-SM-IV</td>
+			<td>84.00</td>
+			<td>142</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>29</td>
+			<td><img src="img/product-images/product-03.gif" alt="Iris Workout Top" width="50" height="" /></td>
+			<td>Iris Workout Top</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS03-XS-PI</td>
+			<td>29.00</td>
+			<td>92</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>4</td>
+			<td><img src="img/product-images/product-03.gif" alt="Jade Yoga Jacket" width="50" height="" /></td>
+			<td>Jade Yoga Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ09-SM-SE</td>
+			<td>32.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>52</td>
+			<td><img src="img/product-images/product-03.gif" alt="Josie Yoga Jacket" width="50" height="" /></td>
+			<td>Josie Yoga Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ02-SM-SL</td>
+			<td>45.00</td>
+			<td>432</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>224</td>
+			<td><img src="img/product-images/product-03.gif" alt="Juliana Short-Sleeve Tee" width="50" height="" /></td>
+			<td>Juliana Short-Sleeve Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS07-SM-BL</td>
+			<td>42.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>1</td>
+			<td><img src="img/product-images/product-03.gif" alt="Juno Jacket" width="50" height="" /></td>
+			<td>Juno Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ06-SM-PG</td>
+			<td>64.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>136</td>
+			<td><img src="img/product-images/product-03.gif" alt="Jupiter All-Weather Trainer" width="50" height="" /></td>
+			<td>Jupiter All-Weather Trainer</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ06-ME-BL</td>
+			<td>56.99</td>
+			<td>611</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>254</td>
+			<td><img src="img/product-images/product-03.gif" alt="Karissa V-Neck Tee" width="50" height="" /></td>
+			<td>Karissa V-Neck Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS10-SM-PI</td>
+			<td>32.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>163</td>
+			<td><img src="img/product-images/product-03.gif" alt="Karmen Yoga Pant" width="50" height="" /></td>
+			<td>Karmen Yoga Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP01-SM-DG</td>
+			<td>39.00</td>
+			<td>251</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>297</td>
+			<td><img src="img/product-images/product-03.gif" alt="Kenobi Trail Jacket" width="50" height="" /></td>
+			<td>Kenobi Trail Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ04-ME-BL</td>
+			<td>47.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>233</td>
+			<td><img src="img/product-images/product-03.gif" alt="Kratos Gym Pant" width="50" height="" /></td>
+			<td>Kratos Gym Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP05-ME-NA</td>
+			<td>57.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>271</td>
+			<td><img src="img/product-images/product-03.gif" alt="Lando Gym Jacket" width="50" height="" /></td>
+			<td>Lando Gym Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ08-ME-GR</td>
+			<td>99.00</td>
+			<td>40</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>110</td>
+			<td><img src="img/product-images/product-03.gif" alt="Layla Tee" width="50" height="" /></td>
+			<td>Layla Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS04-SM-MI</td>
+			<td>29.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>121</td>
+			<td><img src="img/product-images/product-03.gif" alt="Leah Yoga Top" width="50" height="" /></td>
+			<td>Leah Yoga Top</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT05-XS-BL</td>
+			<td>39.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>300</td>
+			<td><img src="img/product-images/product-03.gif" alt="Livingston All-Purpose Tight" width="50" height="" /></td>
+			<td>Livingston All-Purpose Tight</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP09-LG-BL</td>
+			<td>75.00</td>
+			<td>334</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>137</td>
+			<td><img src="img/product-images/product-03.gif" alt="Logan HeatTec¨ Tee" width="50" height="" /></td>
+			<td>Logan HeatTec¨ Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS10-ME-BK</td>
+			<td>24.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>296</td>
+			<td><img src="img/product-images/product-03.gif" alt="Lono Yoga Short" width="50" height="" /></td>
+			<td>Lono Yoga Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH06-ME-DG</td>
+			<td>32.00</td>
+			<td>74</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>248</td>
+			<td><img src="img/product-images/product-03.gif" alt="Lucia Cross-Fit Bra" width="50" height="" /></td>
+			<td>Lucia Cross-Fit Bra</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WB05-SM-BW</td>
+			<td>39.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>107</td>
+			<td><img src="img/product-images/product-03.gif" alt="Mach Street Sweatshirt" width="50" height="" /></td>
+			<td>Mach Street Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH10-ME-NV</td>
+			<td>53.00</td>
+			<td>31</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>192</td>
+			<td><img src="img/product-images/product-03.gif" alt="Marco Lightweight Active Hoodie" width="50" height="" /></td>
+			<td>Marco Lightweight Active Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH13-ME-LB</td>
+			<td>74.00</td>
+			<td>60</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>281</td>
+			<td><img src="img/product-images/product-03.gif" alt="Mars HeatTech Pullover" width="50" height="" /></td>
+			<td>Mars HeatTech Pullover</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ10-ME-RE</td>
+			<td>66.00</td>
+			<td>70</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>64</td>
+			<td><img src="img/product-images/product-03.gif" alt="Maxima Drawstring Short" width="50" height="" /></td>
+			<td>Maxima Drawstring Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH02-SM-LG</td>
+			<td>24.00</td>
+			<td>320</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>193</td>
+			<td><img src="img/product-images/product-03.gif" alt="Maya Tunic" width="50" height="" /></td>
+			<td>Maya Tunic</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT07-XS-MI</td>
+			<td>29.00</td>
+			<td>351</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>93</td>
+			<td><img src="img/product-images/product-03.gif" alt="Meteor Workout Short" width="50" height="" /></td>
+			<td>Meteor Workout Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH03-ME-RO</td>
+			<td>32.50</td>
+			<td>54</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>86</td>
+			<td><img src="img/product-images/product-03.gif" alt="Miko Pullover Hoodie" width="50" height="" /></td>
+			<td>Miko Pullover Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH04-XS-TE</td>
+			<td>69.00</td>
+			<td>12</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>199</td>
+			<td><img src="img/product-images/product-03.gif" alt="Mimi All-Purpose Short" width="50" height="" /></td>
+			<td>Mimi All-Purpose Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH09-XS-GS</td>
+			<td>44.00</td>
+			<td>34</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>243</td>
+			<td><img src="img/product-images/product-03.gif" alt="Minerva LumaTech V-Tee" width="50" height="" /></td>
+			<td>Minerva LumaTech V-Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS08-XS-NA</td>
+			<td>27.00</td>
+			<td>109</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>126</td>
+			<td><img src="img/product-images/product-03.gif" alt="Mithra Warmup Pant" width="50" height="" /></td>
+			<td>Mithra Warmup Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP06-ME-LG</td>
+			<td>28.00</td>
+			<td>532</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>49</td>
+			<td><img src="img/product-images/product-03.gif" alt="Mona Pullover Hoodlie" width="50" height="" /></td>
+			<td>Mona Pullover Hoodlie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH01-SM-SE</td>
+			<td>57.00</td>
+			<td>476</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>218</td>
+			<td><img src="img/product-images/product-03.gif" alt="Montana Wind Jacket" width="50" height="" /></td>
+			<td>Montana Wind Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ03-ME-BR</td>
+			<td>49.00</td>
+			<td>50</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>178</td>
+			<td><img src="img/product-images/product-03.gif" alt="Nadia Elements Shell" width="50" height="" /></td>
+			<td>Nadia Elements Shell</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ10-XS-YE</td>
+			<td>69.00</td>
+			<td>340</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>165</td>
+			<td><img src="img/product-images/product-03.gif" alt="Neve Studio Dance Jacket" width="50" height="" /></td>
+			<td>Neve Studio Dance Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ11-XS-EB</td>
+			<td>69.00</td>
+			<td>40</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>51</td>
+			<td><img src="img/product-images/product-03.gif" alt="Nona Fitness Tank" width="50" height="" /></td>
+			<td>Nona Fitness Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT04-SM-BL</td>
+			<td>39.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>119</td>
+			<td><img src="img/product-images/product-03.gif" alt="Nora Practice Tank" width="50" height="" /></td>
+			<td>Nora Practice Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT03-XS-PI</td>
+			<td>39.00</td>
+			<td>60</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>171</td>
+			<td><img src="img/product-images/product-03.gif" alt="Olivia 1/4 Zip Light Jacket" width="50" height="" /></td>
+			<td>Olivia 1/4 Zip Light Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ12-SM-EB</td>
+			<td>64.00</td>
+			<td>90</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>151</td>
+			<td><img src="img/product-images/product-03.gif" alt="Orestes Fitness Short" width="50" height="" /></td>
+			<td>Orestes Fitness Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH08-ME-BL</td>
+			<td>29.00</td>
+			<td>93</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>203</td>
+			<td><img src="img/product-images/product-03.gif" alt="Orestes Yoga Pant" width="50" height="" /></td>
+			<td>Orestes Yoga Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP10-ME-BG</td>
+			<td>66.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>139</td>
+			<td><img src="img/product-images/product-03.gif" alt="Orion Two-Tone Fitted Jacket" width="50" height="" /></td>
+			<td>Orion Two-Tone Fitted Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ07-ME-BL</td>
+			<td>72.00</td>
+			<td>134</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>291</td>
+			<td><img src="img/product-images/product-03.gif" alt="Oslo Trek Hoodie" width="50" height="" /></td>
+			<td>Oslo Trek Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH08-ME-BR</td>
+			<td>42.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>211</td>
+			<td><img src="img/product-images/product-03.gif" alt="Phoebe Zipper Sweatshirt" width="50" height="" /></td>
+			<td>Phoebe Zipper Sweatshirt</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH07-SM-GR</td>
+			<td>59.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>202</td>
+			<td><img src="img/product-images/product-03.gif" alt="Pierce Gym Short" width="50" height="" /></td>
+			<td>Pierce Gym Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH12-ME-RE</td>
+			<td>20.00</td>
+			<td>153</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>159</td>
+			<td><img src="img/product-images/product-03.gif" alt="Portia Capri" width="50" height="" /></td>
+			<td>Portia Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP13-SM-SN</td>
+			<td>49.00</td>
+			<td>130</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>96</td>
+			<td><img src="img/product-images/product-03.gif" alt="Prima Compete Bra Top" width="50" height="" /></td>
+			<td>Prima Compete Bra Top</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WB04-SM-TE</td>
+			<td>24.00</td>
+			<td>80</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>185</td>
+			<td><img src="img/product-images/product-03.gif" alt="Primo Endurance Tank" width="50" height="" /></td>
+			<td>Primo Endurance Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT03-ME-RE</td>
+			<td>29.00</td>
+			<td>73</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>10</td>
+			<td><img src="img/product-images/product-03.gif" alt="Proteus Fitness Jackshirt" width="50" height="" /></td>
+			<td>Proteus Fitness Jackshirt</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MS12-ME-OR</td>
+			<td>45.00</td>
+			<td>240</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>209</td>
+			<td><img src="img/product-images/product-03.gif" alt="Radiant Tee" width="50" height="" /></td>
+			<td>Radiant Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS12-XS-SN</td>
+			<td>22.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>21</td>
+			<td><img src="img/product-images/product-03.gif" alt="Rapha Sports Short" width="50" height="" /></td>
+			<td>Rapha Sports Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH07-ME-BL</td>
+			<td>29.00</td>
+			<td>162</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>236</td>
+			<td><img src="img/product-images/product-03.gif" alt="Riona Full Zip Jacket" width="50" height="" /></td>
+			<td>Riona Full Zip Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ05-XS-BR</td>
+			<td>60.00</td>
+			<td>92</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>114</td>
+			<td><img src="img/product-images/product-03.gif" alt="Rocco Gym Tank" width="50" height="" /></td>
+			<td>Rocco Gym Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT05-ME-LB</td>
+			<td>24.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>26</td>
+			<td><img src="img/product-images/product-03.gif" alt="Ryker LumaTech Tee (Crew-neck)" width="50" height="" /></td>
+			<td>Ryker LumaTech Tee (Crew-neck)</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS09-ME-RO</td>
+			<td>32.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>65</td>
+			<td><img src="img/product-images/product-03.gif" alt="Ryker LumaTech Tee (V-neck)" width="50" height="" /></td>
+			<td>Ryker LumaTech Tee (V-neck)</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS02-ME-GR</td>
+			<td>24.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>234</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sahara Leggings" width="50" height="" /></td>
+			<td>Sahara Leggings</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP05-XS-GW</td>
+			<td>75.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>76</td>
+			<td><img src="img/product-images/product-03.gif" alt="Selene Yoga Hoodie" width="50" height="" /></td>
+			<td>Selene Yoga Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>WH05-XS-IV</td>
+			<td>42.00</td>
+			<td>98</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>39</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sinbad Fitness Tank" width="50" height="" /></td>
+			<td>Sinbad Fitness Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT09-ME-TE</td>
+			<td>29.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>201</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sol Active Short" width="50" height="" /></td>
+			<td>Sol Active Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH10-ME-LB</td>
+			<td>32.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>284</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sparta Gym Tank" width="50" height="" /></td>
+			<td>Sparta Gym Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT08-ME-GN</td>
+			<td>29.00</td>
+			<td>98</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>154</td>
+			<td><img src="img/product-images/product-03.gif" alt="Stark Fundamental Hoodie" width="50" height="" /></td>
+			<td>Stark Fundamental Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH06-ME-NA</td>
+			<td>42.00</td>
+			<td>147</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>264</td>
+			<td><img src="img/product-images/product-03.gif" alt="Stellar Solar Jacket" width="50" height="" /></td>
+			<td>Stellar Solar Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>WJ01-SM-DP</td>
+			<td>75.00</td>
+			<td>147</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>285</td>
+			<td><img src="img/product-images/product-03.gif" alt="Strike Endurance Tee" width="50" height="" /></td>
+			<td>Strike Endurance Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS08-ME-BK</td>
+			<td>39.00</td>
+			<td>147</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>57</td>
+			<td><img src="img/product-images/product-03.gif" alt="Supernova Sport Pant" width="50" height="" /></td>
+			<td>Supernova Sport Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP04-ME-DG</td>
+			<td>45.00</td>
+			<td>147</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>140</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sybil Running Short" width="50" height="" /></td>
+			<td>Sybil Running Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>WSH08-SM-PM</td>
+			<td>44.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>14</td>
+			<td><img src="img/product-images/product-03.gif" alt="Sylvia Capri" width="50" height="" /></td>
+			<td>Sylvia Capri</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>WP11-SM-GN</td>
+			<td>42.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>204</td>
+			<td><img src="img/product-images/product-03.gif" alt="Taurus Elements Shell" width="50" height="" /></td>
+			<td>Taurus Elements Shell</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ09-ME-YE</td>
+			<td>65.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>25</td>
+			<td><img src="img/product-images/product-03.gif" alt="Teton Pullover Hoodie" width="50" height="" /></td>
+			<td>Teton Pullover Hoodie</td>
+			<td>Simple</td>
+			<td>Hoodies & Sweatshirts</td>
+			<td>MH02-ME-BL</td>
+			<td>70.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>172</td>
+			<td><img src="img/product-images/product-03.gif" alt="Thorpe Track Pant" width="50" height="" /></td>
+			<td>Thorpe Track Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP07-ME-NA</td>
+			<td>68.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>289</td>
+			<td><img src="img/product-images/product-03.gif" alt="Tiberius Gym Tank" width="50" height="" /></td>
+			<td>Tiberius Gym Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT10-ME-YE</td>
+			<td>15.00</td>
+			<td>214</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>293</td>
+			<td><img src="img/product-images/product-03.gif" alt="Tiffany Fitness Tee" width="50" height="" /></td>
+			<td>Tiffany Fitness Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>WS09-SM-TE</td>
+			<td>24.00</td>
+			<td>113</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>77</td>
+			<td><img src="img/product-images/product-03.gif" alt="Torque Power Short" width="50" height="" /></td>
+			<td>Torque Power Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH04-ME-LG</td>
+			<td>32.50</td>
+			<td>113</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>169</td>
+			<td><img src="img/product-images/product-03.gif" alt="Tristan Endurance Tank" width="50" height="" /></td>
+			<td>Tristan Endurance Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT02-ME-WH</td>
+			<td>29.00</td>
+			<td>113</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>244</td>
+			<td><img src="img/product-images/product-03.gif" alt="Troy Yoga Short" width="50" height="" /></td>
+			<td>Troy Yoga Short</td>
+			<td>Simple</td>
+			<td>Shorts</td>
+			<td>MSH09-ME-NA</td>
+			<td>24.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>109</td>
+			<td><img src="img/product-images/product-03.gif" alt="Typhon Performance Fleece-lined Jacket" width="50" height="" /></td>
+			<td>Typhon Performance Fleece-lined Jacket</td>
+			<td>Simple</td>
+			<td>Jackets</td>
+			<td>MJ11-ME-BL</td>
+			<td>52.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>167</td>
+			<td><img src="img/product-images/product-03.gif" alt="Viktor LumaTech Pant" width="50" height="" /></td>
+			<td>Viktor LumaTech Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP02-ME-DG</td>
+			<td>46.00</td>
+			<td>122</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>160</td>
+			<td><img src="img/product-images/product-03.gif" alt="Vulcan Weightlifting Tank" width="50" height="" /></td>
+			<td>Vulcan Weightlifting Tank</td>
+			<td>Simple</td>
+			<td>Tanks</td>
+			<td>MT06-ME-BL</td>
+			<td>28.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>92</td>
+			<td><img src="img/product-images/product-03.gif" alt="Zeppelin Yoga Pant" width="50" height="" /></td>
+			<td>Zeppelin Yoga Pant</td>
+			<td>Simple</td>
+			<td>Pants</td>
+			<td>MP08-ME-LO</td>
+			<td>82.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>95</td>
+			<td><img src="img/product-images/product-03.gif" alt="Zoe Tank" width="50" height="" /></td>
+			<td>Zoe Tank</td>
+			<td>Simple</td>
+			<td>Bras & Tanks</td>
+			<td>WT02-SM-SN</td>
+			<td>29.00</td>
+			<td>354</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="col-select col-massaction"><input type="checkbox" name="select_id" value="" class="massaction-checkbox"></td>
+			
+			<td>175</td>
+			<td><img src="img/product-images/product-03.gif" alt="Zoltan Gym Tee" width="50" height="" /></td>
+			<td>Zoltan Gym Tee</td>
+			<td>Simple</td>
+			<td>Tees</td>
+			<td>MS06-ME-LR</td>
+			<td>29.00</td>
+			<td>76</td>
+			<td>Catalog, Search</td>
+			<td>Enabled</td>
+			<td>Main Website</td>
+			<td>
+				<span class="control-group control-view">
+					<span class="btn-group">
+						<button type="button" class="dropdown-toggle select-action" data-toggle="dropdown" aria-expanded="false">Actions <span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#">Edit</a></li>
+							<li><a href="#">Copy</a></li>
+							<li><a href="#">Delete</a></li>
+						</ul>
+					</span>
+				</span>
+			</td>
+		</tr>
+	                                                       
+                                                                                                                            
+	</tbody>
+</table>
+    
+    
+<script src="http://belbiy.github.io/ux-prototype/products/js/product-creation.js"></script>
+
+
+	</div><!-- /.main-content -->
+
+	<footer class="admin-footer">
+
+			<div class="row">
+
+				<div class="col-sm-6">
+					Interface Locale
+					<select class="form-control inline  select-mage">
+						<option>English (US)</option>
+					</select>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-1">
+							<i class="icon-logo"></i>
+						</div>
+						<div class="col-sm-11">
+							&copy; Magento is an eBay Inc. company. Copyright© 2014 Magento, Inc. All rights reserved. Magento ver. 0.1.0-alpha107 Help Us Keep Magento Healthy - <a href="#">Report All Bugs</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+</div><!-- /.admin-page -->
+
+</div><!-- /.main-wrap -->
+<nav class="app-nav">
+	<div class="app-nav-wrap">
+		<header>
+			<div class="app-nav-title">Product Creation</div>
+			<div class="app-nav-description">Product creation, image management and configurable product settings.</div>
+			<div class="app-nav-interactive-control"><label><input type="checkbox" class="app-show-interactive-toggle" /> show interactive areas</label></div>
+		</header>
+
+		<div class="app-nav-subtitle">Prototypes</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/menu.html">New Menu</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/page.html">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=" active "><a href="http://belbiy.github.io/ux-prototype/products/">Product Creation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/new-product-01.html">New product</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/installation/">Installation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/">Deployment Tool</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/create-order/">Order Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/search/">Search Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html">Theme Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html">Visual Merchandiser</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system-config/">System Configuration</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/dashboard/">Dashboard</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system/indexers.html">Index Management</a></li>
+				
+				
+		
+			
+		
+		</ul>
+		
+		
+		<div class="app-nav-subtitle">Patterns</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/messaging.html">Alerts and Messages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/breadcrumb.html">Breadcrumbs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/button-bar.html">Button Bar</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/data-grid.html">Data Grid Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/forms.html">Form Patterns</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/joyride.html">Joyride</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/modals.html">Modals Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels.html">Panels</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels-accordion.html">Panels Accordion</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/index.html">Pattern Reference</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tabs.html">Tabs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tile-layout.html">Tile Layout</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/trees.html">Trees</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/typography.html">Typography</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/wizard.html">Wizard</a></li>
+				
+				
+		
+			
+		
+		</ul>
+	
+	
+	</div>
+</nav>
+
+
+
+
+</html>

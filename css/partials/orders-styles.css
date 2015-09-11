@@ -1,0 +1,45 @@
+/*  THESE ARE JUST HELPER TAGS - TO BE REMOVED - Scott Hensley */
+.slug-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  text-align: center;
+  color: #999;
+  margin: 30px 0;
+}
+
+.alignment-tag {
+  background-color: yellow;
+  vertical-align: middle;
+}
+
+.this {
+  background-color: yellow;
+}
+
+/* ----- 
+I'd used this as a way of removing padding from the divs that use ".col", but
+decided to go ahead and leave the padding since it seems easier that way.  
+----*/
+/*.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, 
+.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	padding: 0;
+	margin: 0;
+background-color: pink;
+}*/
+.sub-section-title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.sub-section-content {
+  margin-bottom: 40px;
+}
+
+.left-split {
+  min-height: 200px;
+}
+
+.right-split {
+  min-height: 200px;
+  margin-left: 80px;
+}

@@ -1,0 +1,211 @@
+.page-content-wrap {
+  padding: 10px 0 0 0;
+  -webkit-user-select: none;
+}
+.page-content-wrap .layout-row {
+  margin: 0 -5px;
+}
+.page-content-wrap .layout-column {
+  padding: 0 5px;
+}
+
+.page-content-block {
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  user-select: none;
+}
+.page-content-block .page-content-block-title {
+  padding: 10px 0 10px 10px;
+}
+.page-content-block .page-content-block-title .btn {
+  margin-top: -10px;
+}
+.page-content-block .page-content-block-body {
+  padding: 15px;
+  background: #fff;
+  min-height: 150px;
+  user-select: none;
+}
+.page-content-block.non-editable {
+  border-color: #E6E7E8;
+  background: #E6E7E8;
+}
+.page-content-block.non-editable .page-content-block-title {
+  color: #999;
+}
+
+.cms-item-body .row {
+  margin: 0;
+}
+.cms-item-body .row .page-content-block {
+  margin: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.cms-item-body .col-sm-4 {
+  padding: 0;
+}
+.cms-item-body .col-sm-4:last-child .page-content-block {
+  border-right: none;
+}
+
+.cms-item {
+  display: block;
+  background: #fff;
+  border: 2px solid #ccc;
+  margin: 0 0 10px 0;
+  position: relative;
+  transition: opacity .5s;
+}
+.cms-item .cms-item-header {
+  padding: 0 0 0 30px;
+  user-select: none;
+  position: relative;
+  -webkit-user-select: none;
+  background: #f5f5f5;
+}
+.cms-item .cms-item-header .icon-gripper {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  min-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+  vertical-align: baseline;
+  cursor: -webkit-grab;
+}
+.cms-item .cms-item-header .icon-gripper:active {
+  cursor: -webkit-grabbing;
+}
+.cms-item .cms-item-header .overflow-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cms-item .cms-item-title {
+  display: inline-block;
+  padding: 10px 0;
+}
+.cms-item .cms-item-type {
+  font-size: 12px;
+  font-style: italic;
+  display: block;
+  margin: -5px 0 0 0;
+  padding: 0 0 10px 0;
+  color: #999;
+  user-select: none;
+}
+
+.cms-item-block .cms-item-body {
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+.cms-item-body h1 {
+  margin: 0;
+}
+
+.responsive-view-switcher .icon {
+  font-size: 22px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.theme-preview {
+  vertical-align: top;
+}
+.theme-preview .theme-preview-thumbnail {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.theme-preview .theme-preview-thumbnail img {
+  border: 1px solid #ccc;
+}
+.theme-preview .theme-preview-name {
+  font-size: 20px;
+}
+.theme-preview .theme-preview-description {
+  font-size: 13px;
+  color: #999;
+}
+
+.columns-picker tr {
+  background: none;
+  transition: all .2s;
+}
+.columns-picker tr:hover {
+  background: #EAF1F4;
+  cursor: pointer;
+}
+.columns-picker tr.active {
+  background: #C9E8F2;
+  cursor: default;
+}
+.columns-picker td {
+  padding: 15px 20px 15px 15px;
+}
+.columns-picker .col-select {
+  text-align: center;
+  width: 200px;
+}
+
+.show-grid.row {
+  padding: 0;
+  margin: 0;
+}
+.show-grid.row > div {
+  background: rgba(238, 238, 238, 0.9);
+  border: 1px solid rgba(204, 204, 204, 0.9);
+  text-align: center;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+.tree.layout-list {
+  padding: 0;
+  margin: 0;
+}
+.tree.layout-list li {
+  clear: both;
+  padding-bottom: 0;
+}
+.tree.layout-list .children {
+  padding-left: 15px;
+}
+.tree.layout-list .children > li:after, .tree.layout-list .children > li:before {
+  left: -24px;
+}
+.tree.layout-list .children li:last-child::before {
+  height: 23px;
+}
+.tree.layout-list .layout-wrap {
+  position: relative;
+  padding: 10px 0 0 0;
+  top: -10px;
+  min-height: 80px;
+}
+.tree.layout-list .layout-wrap:hover {
+  background: #EAF1F4;
+  cursor: pointer;
+}
+.tree.layout-list .layout-wrap.active {
+  background: #C9E8F2;
+  cursor: default;
+}
+.tree.layout-list .layout-wrap .btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.tree.layout-list .layout-thumbnail {
+  float: left;
+  margin: 0 20px;
+}
+.tree.layout-list .layout-name {
+  font-size: 20px;
+}

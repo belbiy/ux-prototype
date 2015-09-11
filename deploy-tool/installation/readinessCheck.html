@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title></title>
+	<meta name="description" content="Magento 2 UX Prototype
+">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/app.css" />
+	<link rel="stylesheet" href="http://belbiy.github.io/ux-prototype/css/custom-bootstrap.css" />
+	
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/jquery-ui.min.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/app.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/vendor/bootstrap.js"></script>
+	<script src="http://belbiy.github.io/ux-prototype/js/custom-bootstrap.js"></script>
+
+</head>	
+<body>
+<div class="app-main-wrap">
+
+		
+	<div class="row page-margin">
+
+
+
+	<div class="col-md-12">
+
+		<h1 class = "installation_logo">Magento Installation</h1>
+
+		 <div class= "wizard_bar">
+
+		        <div class= "row">
+			         <div class = "col-md-8">
+			          
+			            <!-- progressbar -->
+						<ul id="steps_bar">
+							<li class="active">Readiness Check</li>
+							<li >Add a Database</li>
+							<li >Web Configuration</li>
+							<li>Customize Your Store</li>
+							<li>Create Admin Account</li>
+							<li>Install</li>
+						</ul>
+
+					 </div>	
+
+				  	<div class = "col-md-4">
+
+						<div class="alignment-for-buttons">
+							<button disabled class="btn btn btn-secondary disabled">Try Again</button>  &nbsp;&nbsp;
+				            <button disabled class="back_button disabled">Back</button>
+				            <button disabled id="disabled_next_button" class="next_button disabled">Next</button>            
+				            <button onclick="location.href='database.html'" id="enabled_next_button" class="next_button">Next</button>
+				                     
+			         	</div>
+			         </div>
+
+		         </div>
+		
+		 </div>
+
+		 <br>
+		 <h2> Step 1: Readiness Check</h2>
+		 <br>
+
+
+		 <!--General message-->
+		 <div class = "general_message_readiness_check">
+
+		 	<p id="original_message">We’re making sure your Magento Admin will still work after taking all the actions in your queue. </p>
+
+		 	<p id="complete_message"> You can now move on to the next step. </p>
+
+		 </div>
+		 <br>
+		 <!--Checks-->
+
+		 <div class = "specific_checks">
+
+		 	<!--PHP Version Check-->
+			 <div id="php_version" class="spacing bold"> PHP Version Check...</div>
+			 <div id="php_version_done" class="spacing" > 
+			 		<span class="bold"> PHP Version Check</span><br>
+					<p class="indent"> Your PHP version is correct (5.4.3) <p>
+			 </div>
+
+
+			  <!--PHP Extensions Check-->
+			  <div id="php_extensions" class="spacing bold"> Checking PHP Extensions...</div>
+			  <div id="php_extensions_done" class="spacing" > 
+			 		<span class="bold"> PHP Extensions Check</span><br>
+					<p class="indent"> You meet 10 out of 10 PHP extension requirements. <a href=# >Show Details </a> <p>
+
+			 </div>
+
+			  <!--File Permission Check-->
+			 <div id="file_permissions" class="spacing bold"> Checking File Permissions...</div>
+  			 <div id="file_permissions_done" class="spacing" > 
+			 		<span class="bold"> File Permissions Check </span><br>
+					<p class="indent"> You meet 5 out of 5 file permission requirements. <a href=# >Show Details </a> <p>
+
+			 </div>
+
+			 <!--Modules and Component Dependencies Check-->
+			 <div id="module_dependencies" class="spacing bold"> Checking Module and Component Dependencies...</div>
+			  <div id="module_dependencies_done" class="spacing" > 
+			 		<span class="bold"> Module and Component Dependencies Check</span><br>
+					<p class="indent"> You have no dependency conflicts.  <p>
+
+			 </div>
+
+		</div><!--end of specific chcecks -->
+
+	</div>
+</div>
+
+
+<script src="http://belbiy.github.io/ux-prototype/deploy-tool/js/deploy_tool.js"></script>
+
+
+
+
+</div><!-- /.main-wrap -->
+<nav class="app-nav">
+	<div class="app-nav-wrap">
+		<header>
+			<div class="app-nav-title"></div>
+			<div class="app-nav-description"></div>
+			<div class="app-nav-interactive-control"><label><input type="checkbox" class="app-show-interactive-toggle" /> show interactive areas</label></div>
+		</header>
+
+		<div class="app-nav-subtitle">Prototypes</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/menu.html">New Menu</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/page.html">Home Page</a></li>
+				
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/">Product Creation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/products/new-product-01.html">New product</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/installation/">Installation</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/deploy-tool/">Deployment Tool</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/menus/">Menus</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/pages/">Pages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/create-order/">Order Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/search/">Search Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/Theme-Management/treeview1.html">Theme Management</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/visual-merchandiser/test.html">Visual Merchandiser</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system-config/">System Configuration</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/dashboard/">Dashboard</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/system/indexers.html">Index Management</a></li>
+				
+				
+		
+			
+		
+		</ul>
+		
+		
+		<div class="app-nav-subtitle">Patterns</div>
+		
+		<ul class="nav nav-pills nav-stacked navmenu-nav">
+			
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/messaging.html">Alerts and Messages</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/breadcrumb.html">Breadcrumbs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/button-bar.html">Button Bar</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/data-grid.html">Data Grid Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/forms.html">Form Patterns</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/joyride.html">Joyride</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/modals.html">Modals Pattern</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels.html">Panels</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/panels-accordion.html">Panels Accordion</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/index.html">Pattern Reference</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tabs.html">Tabs</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/tile-layout.html">Tile Layout</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/trees.html">Trees</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/typography.html">Typography</a></li>
+				
+				
+		
+			
+			
+				
+		
+				<li class=""><a href="http://belbiy.github.io/ux-prototype/patterns/wizard.html">Wizard</a></li>
+				
+				
+		
+			
+		
+		</ul>
+	
+	
+	</div>
+</nav>
+
+
+
+
+</html>
